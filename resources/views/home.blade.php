@@ -198,9 +198,11 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <a href=".background-imageoffice"><img src="{{ asset('panahauah.png') }}" alt=""></a>
             <div class="centered"
-                style="display: flex; justify-content: center; align-items: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); width: 100%; text-align: center;">
+                <a href="#Join" style="text-decoration: none; color: #ffffff;">
+                    <img src="{{ asset('panahauah.png') }}" alt="">
+                </a>
             </div>
         </div>
         <div class="row mt-5">
@@ -451,7 +453,7 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-        <div class="image-container" style="position: relative;">
+        <div class="image-container" id="Join" style="position: relative;">
             <div class="background-imageoffice">
                 <div class="left"
                     style="display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute;  top: 149px; left: -694px; width: 100%; height: 100%;">
