@@ -20,73 +20,41 @@ $baseurl = 'https://monitoring.globaldeva.com/';
     <!-- Add the FilePond CSS -->
     <!-- Add this in the <head> section of your HTML -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-
     <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
-
     <link rel="apple-touch-icon" sizes="57x57" href="{{ $baseurl }}/public/img/favicon3/apple-icon-57x57.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
     <link rel="apple-touch-icon" sizes="60x60" href="{{ $baseurl }}/public/img/favicon3/apple-icon-60x60.png">
-
     <link rel="apple-touch-icon" sizes="72x72" href="{{ $baseurl }}/public/img/favicon3/apple-icon-72x72.png">
-
     <link rel="apple-touch-icon" sizes="76x76" href="{{ $baseurl }}/public/img/favicon3/apple-icon-76x76.png">
-
     <link rel="apple-touch-icon" sizes="114x114" href="{{ $baseurl }}/public/img/favicon3/apple-icon-114x114.png">
-
     <link rel="apple-touch-icon" sizes="120x120" href="{{ $baseurl }}/public/img/favicon3/apple-icon-120x120.png">
-
     <link rel="apple-touch-icon" sizes="144x144" href="{{ $baseurl }}/public/img/favicon3/apple-icon-144x144.png">
-
     <link rel="apple-touch-icon" sizes="152x152" href="{{ $baseurl }}/public/img/favicon3/apple-icon-152x152.png">
-
     <link rel="apple-touch-icon" sizes="180x180" href="{{ $baseurl }}/public/img/favicon3/apple-icon-180x180.png">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
-
     <link rel="icon" type="image/png" sizes="192x192"
         href="{{ $baseurl }}/public/img/favicon3/android-icon-192x192.png">
-
     <link rel="icon" type="image/png" sizes="32x32"
         href="{{ $baseurl }}/public/img/favicon3/favicon-32x32.png">
-
     <link rel="icon" type="image/png" sizes="96x96"
         href="{{ $baseurl }}/public/img/favicon3/favicon-96x96.png">
-
     <link rel="icon" type="image/png" sizes="16x16"
         href="{{ $baseurl }}/public/img/favicon3/favicon-16x16.png">
-
     <link rel="manifest" href="{{ $baseurl }}/public/img/favicon3/manifest.json">
-
     <meta name="msapplication-TileColor" content="#ffffff">
-
     <meta name="msapplication-TileImage" content="{{ asset('gopiicon.png') }}">
-
     <meta name="theme-color" content="#ffffff">
-
     <link rel="stylesheet" type="text/css" href="{{ $baseurl }}/public/css/style_timelane.css?v2?>">
-
     <link rel="stylesheet" href="{{ $baseurl }}/public/css/style.css?v=1.0">
-
     <link rel="stylesheet" href="{{ $baseurl }}/public/css/responsive.css">
-
     <link rel="stylesheet" href="{{ $baseurl }}/public/css/dropify.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"> --}}
-
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap4-theme@x.x.x/dist/select2-bootstrap4.min.css">
+
 
     @yield('css')
 
@@ -769,7 +737,97 @@ $baseurl = 'https://monitoring.globaldeva.com/';
             -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
             width: 12px;
         }
+
+        .loader {
+            position: relative;
+            width: 2.5em;
+            height: 2.5em;
+            transform: rotate(165deg);
+        }
+
+        .loader:before,
+        .loader:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            display: block;
+            width: 0.5em;
+            height: 0.5em;
+            border-radius: 0.25em;
+            transform: translate(-50%, -50%);
+        }
+
+        .loader:before {
+            animation: before8 2s infinite;
+        }
+
+        .loader:after {
+            animation: after6 2s infinite;
+        }
+
+        @keyframes before8 {
+            0% {
+                width: 0.5em;
+                box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+            }
+
+            35% {
+                width: 2.5em;
+                box-shadow: 0 -0.5em rgba(225, 20, 98, 0.75), 0 0.5em rgba(111, 202, 220, 0.75);
+            }
+
+            70% {
+                width: 0.5em;
+                box-shadow: -1em -0.5em rgba(225, 20, 98, 0.75), 1em 0.5em rgba(111, 202, 220, 0.75);
+            }
+
+            100% {
+                box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+            }
+        }
+
+        @keyframes after6 {
+            0% {
+                height: 0.5em;
+                box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+            }
+
+            35% {
+                height: 2.5em;
+                box-shadow: 0.5em 0 rgba(61, 184, 143, 0.75), -0.5em 0 rgba(233, 169, 32, 0.75);
+            }
+
+            70% {
+                height: 0.5em;
+                box-shadow: 0.5em -1em rgba(61, 184, 143, 0.75), -0.5em 1em rgba(233, 169, 32, 0.75);
+            }
+
+            100% {
+                box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+            }
+        }
+
+        .loader {
+            position: absolute;
+            top: calc(50% - 1.25em);
+            left: calc(50% - 1.25em);
+        }
+
+        .site-content {
+            flex: 1;
+            /* Konten mengambil sisa ruang */
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            /* Minimal 100% tinggi viewport */
+            margin: 0;
+        }
     </style>
+
 
 </head>
 
@@ -778,7 +836,6 @@ $baseurl = 'https://monitoring.globaldeva.com/';
 @endphp
 
 <body>
-
     <div class="preloader" style="display: none;"></div>
     <div class="page-wrapper">
         <header class="site-header header-one desktop-show" style="background-color: #ffffff;">
@@ -799,16 +856,18 @@ $baseurl = 'https://monitoring.globaldeva.com/';
                                 <a class="ex3" href="{{ route('home') }}" style="color: rgb(0, 0, 0);">Home</a>
                             </li>
                             <li class="scrollToLink">
-                                <a class="ex3" href="" style="color: rgb(0, 0, 0);">About Us</a>
+                                <a class="ex3" href="{{ route('about') }}" style="color: rgb(0, 0, 0);">About
+                                    Us</a>
                             </li>
                             <li class="scrollToLink">
-                                <a class="ex3" href="" style="color: rgb(0, 0, 0);">What We Do</a>
+                                <a class="ex3" href="{{ route('whatwedo') }}" style="color: rgb(0, 0, 0);">What
+                                    We Do</a>
                             </li>
                         </ul>
                     </div>
                     <div class="right-side-box warna-logout" style="float: right;">
-                        <form action="" method="">
-                            <button type="submit" class="btn btn-primary" onclick="Contact()"
+                        <form action="{{ route('contact') }}">
+                            <button type="submit" class="btn btn-primary"
                                 style="background-color: #40A6D3; border-radius: 0 !important;">Contact Us !</button>
                         </form>
                     </div>
@@ -820,31 +879,39 @@ $baseurl = 'https://monitoring.globaldeva.com/';
                 style="background-color: #ffffff;">
                 <div class="container clearfix">
                     <div class="logo-box clearfix" style="margin-right: 20%; float: left;">
-                        <a class="navbar-brand" href="{{ url('/') }}">
-                            <img src="{{ asset('gopiicon.png') }}" class="main-logo" alt="Awesome Image"
-                                width="57" height="57">
-                        </a>
-                        <button class="menu-toggler" data-target=".header-one .main-navigation">
-                            <span class="fa fa-bars"></span>
-                        </button>
-                    </div>
-                    <div class="main-navigation" style="">
-                        <ul class="navigation-box one-page-scroll-menu">
-                            <li class="scrollToLink current">
-                                <a class="ex3" href="{{ route('home') }}" style="color: rgb(0, 0, 0);">Home</a>
-                            </li>
-                            <li class="scrollToLink">
-                                <a class="ex3" href="" style="color: rgb(0, 0, 0);">About Us</a>
-                            </li>
-                            <li class="scrollToLink">
-                                <a class="ex3" href="" style="color: rgb(0, 0, 0);">What We Do</a>
-                            </li>
-                        </ul>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <a class="navbar-brand" href="{{ url('/') }}">
+                                <img src="{{ asset('gopiicon.png') }}" class="main-logo" alt="Awesome Image"
+                                    width="57" height="57">
+                            </a>
+                            <a style="color: #F1343B; width: 26px; height: 20px; margin-bottom:5%"
+                                data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                <i class="fa fa-bars" style="font-size: 35px;"></i>
+                            </a>
+                        </div>
+                        <div class="collapse" id="collapseExample">
+                            <ul class="navigation-box one-page-scroll-menu">
+                                <li class="scrollToLink current">
+                                    <a class="ex3" href="{{ route('home') }}"
+                                        style="color: rgb(0, 0, 0);">Home</a>
+                                </li>
+                                <li class="scrollToLink">
+                                    <a class="ex3" href="{{ route('about') }}" style="color: rgb(0, 0, 0);">About
+                                        Us</a>
+                                </li>
+                                <li class="scrollToLink">
+                                    <a class="ex3" href="{{ route('whatwedo') }}"
+                                        style="color: rgb(0, 0, 0);">What
+                                        We Do</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
         </header>
-        <br><br><br><br>
+
         @yield('content')
         <footer class="site-footer desktop-show" style="background-color: black; height:40%">
             <div class="">
@@ -889,7 +956,8 @@ $baseurl = 'https://monitoring.globaldeva.com/';
                 </div>
             </div>
         </footer>
-        <footer class="site-footer mt-3 mobile-show" style="background-color: black; height:40%">
+        <footer class="site-footer mobile-show"
+            style="background-color: black; padding-top: 10px; padding-bottom: 10px;">
             <div class="col-lg-5" style="margin-top: 20px !important;">
                 <img src="{{ asset('logofooter.png') }}" alt="logo" width="255" height="60"
                     style="margin-top: 20px !important;">
@@ -925,46 +993,31 @@ $baseurl = 'https://monitoring.globaldeva.com/';
     <!-- /.scroll-to-top -->
 
     <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
-
-    <!-- Add the FilePond plugins -->
     <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
     <script src="https://unpkg.com/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.js"></script>
-
-
     <script src="{{ asset('public/js/jquery.js') }}"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
     <script src="{{ asset('public/js/bootstrap.bundle.min.js') }}"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-
-    {{-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script> --}}
-
     <script src="{{ asset('public/js/owl.carousel.min.js') }}"></script>
-
     <script src="{{ asset('public/js/waypoints.min.js') }}"></script>
-
     <script src="{{ asset('public/js/jquery.counterup.min.js') }}"></script>
-
     <script src="{{ asset('public/js/jquery.bxslider.min.js') }}"></script>
-
     <script src="{{ asset('public/js/jquery.easing.min.js') }}"></script>
-
     <script src="{{ asset('public/js/theme.js') }}"></script>
-
     <script src="{{ asset('public/js/dropify.min.js') }}"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js"></script>
 
 
 
@@ -981,12 +1034,20 @@ $baseurl = 'https://monitoring.globaldeva.com/';
 
             });
 
+            $('#collapseExample2').on('show.bs.collapse', function() {
+                $('#collapseButton').text("Read Less");
+            });
+
+            $('#collapseExample2').on('hide.bs.collapse', function() {
+                $('#collapseButton').text("Read More");
+            });
         });
 
         function Contact() {
-            window.location.href = "{{ route('contact') }}"
+            console.log('Contact function executed');
+            window.location.href = "http://localhost:8000/contact";
         }
-        
+
         var swiper = new Swiper('.swiper-container.two', {
             pagination: '.swiper-pagination',
             paginationClickable: true,

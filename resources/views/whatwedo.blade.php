@@ -27,6 +27,17 @@
             .mobile-show {
                 display: block;
             }
+
+            .background-image {
+                margin-top: 20%;
+                width: 390px;
+                height: 208px;
+                /* Set the height of the container */
+                background-image: url('{{ asset('officemockup.png') }}');
+                background-size: cover;
+                /* or background-size: contain; */
+                background-position: center center;
+            }
         }
 
         .image-containerspecial {
@@ -70,26 +81,31 @@
                 </h2>
             </div>
         </div>
-        <div class="col-sm-12 mt-5">
-            <h5 style="color: black"><strong>Home/</strong>What We Do</h5>
-        </div>
         <div class="row">
             <div class="col-lg-6 mt-5">
+                <h5 style="color: black; margin-left:15%"><strong>Home/</strong>What We Do</h5>
                 <div class="col-md-5 mt-5" style="margin-left: 40%">
                     <h1 style="color: black"><strong>What We Do</strong></h1>
                     <p style="color: black">Increasing consumer demand and expectations have driven us to continue to
                         develop and innovate in creating a business sector that can always meet the needs of consumers</p>
+                    <div class="collapse" id="collapseExample2">
+                        <div>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                            proident.
+                        </div>
+                    </div>
                     <div class="button-container">
-                        <a href="#" class="btn btn-primary"
-                            style="height:20%; background-color: #000000; border-radius: 0 !important;">Read
-                            More</button></a>
+                        <a href="#collapseExample2" class="btn btn-primary" id="collapseButton"
+                            style="height:20%; background-color: #000000; border-radius: 0 !important;"
+                            data-toggle="collapse" data-target="#collapseExample2">Read More</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6" style="background-color: black; height: 50vh;">
             </div>
             <img src="{{ asset('gopioffice.png') }}" width="653" height="400" class="imgpeople"
-                style="position: absolute; left: 928px; top:738px; display:block">
+                style="position: absolute; left: 928px; top:506 px; display:block">
         </div>
         <div class="col-sm-12 mt-5 mb-5">
             <center>
@@ -196,19 +212,26 @@
         <div class="col-sm-12 mt-5">
             <h5 style="color: black"><strong>Home/</strong>What We Do</h5>
         </div>
-            <div class="col-lg-6 mt-5">
-                <div class="col-md-5 mt-5" >
-                    <h1 style="color: black"><strong>What We Do</strong></h1>
-                    <p style="color: black">Increasing consumer demand and expectations have driven us to continue to
-                        develop and innovate in creating a business sector that can always meet the needs of consumers</p>
-                    <div class="button-container">
-                        <a href="#" class="btn btn-primary"
-                            style="height:20%; background-color: #000000; border-radius: 0 !important;">Read
-                            More</button></a>
+        <div class="col-lg-6 mt-5">
+            <div class="col-md-5 mt-5">
+                <h1 style="color: black"><strong>What We Do</strong></h1>
+                <p style="color: black">Increasing consumer demand and expectations have driven us to continue to
+                    develop and innovate in creating a business sector that can always meet the needs of consumers</p>
+                <div class="collapse" id="collapseExample3">
+                    <div>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                        proident.
                     </div>
                 </div>
+                <div class="button-container">
+                    <a href="#collapseExample3" class="btn btn-primary"
+                        style="height:20%; background-color: #000000; border-radius: 0 !important;" data-toggle="collapse"
+                        data-target="#collapseExample3" id="collapseButton">Read More</a>
+                </div>
             </div>
-            {{-- <div class="col-lg-6" style="background-color: black; height: 50vh;">
+        </div>
+        {{-- <div class="col-lg-6" style="background-color: black; height: 50vh;">
             </div>
             <img src="{{ asset('gopioffice.png') }}" width="653" height="400" class="imgpeople"
                 style="position: absolute; left: 928px; top:738px; display:block"> --}}
