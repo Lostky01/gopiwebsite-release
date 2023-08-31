@@ -84,6 +84,7 @@
                 top: 0;
                 left: 0;
             }
+
         }
 
         @media screen and (max-width:320px) {
@@ -102,6 +103,32 @@
                 top: 0;
                 left: 0;
             }
+        }
+
+        @media screen and (max-height:1020px) {
+            .desc {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 182px;
+                left: -694px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .desc {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 149px;
+            left: -694px;
+            width: 100%;
+            height: 100%;
         }
 
         .background-image-mobile {
@@ -175,13 +202,43 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            opacity: 0;
+            opacity: 1;
             transition: opacity 0.3s ease;
         }
 
-        .swiper-slide:hover .slider-description {
-            opacity: 1;
+        .slider-image {
+            transition: transform 0.3s ease;
         }
+
+        .swiper-slide:hover .slider-image,
+        .swiper-slide:hover .slider-description-mobile {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+
+        .swiper-slide:hover .slider-description-mobile {
+            opacity: 0;
+            transition: transform 0.3s ease;
+        }
+
+
+        .swiper-slide:hover .slider-description {
+            opacity: 0;
+        }
+
+        .slider-description-mobile {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+
+
 
         .custom-underline {
             border-bottom: 3px solid #002D92;
@@ -230,7 +287,7 @@
                 <!-- Isi konten dari col-lg-6 -->
             </div>
             <img src="{{ asset('people.png') }}" width="653" height="400" class="imgpeopledesktop"
-                style="position: absolute; left: 915px; top:806px; display:block">
+                style="position: relative; left: 915px; top:-455px; display:block">
         </div>
         <div class="container mt-5" style="max-width: 1500px;">
             <h1 style="color: black; text-align: center;"><strong>Business Strategy</strong></h1>
@@ -450,13 +507,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
         <div class="image-container" id="Join" style="position: relative;">
             <div class="background-imageoffice">
-                <div class="left"
-                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute;  top: 149px; left: -694px; width: 100%; height: 100%;">
+                <div class="left desc">
                     <h1 class="contact"
                         style="font-size: 50px; color: #ffffff; /* background-color: rgba(0, 0, 0, 0.7); */ padding: 20px; border-radius: 5px;">
                         <strong>Create Good <br> Business With Us</strong>
@@ -571,7 +627,7 @@
                         <div class="slider-image">
                             <img src="{{ asset('dooleydummy.png') }}" alt="slide 1">
                         </div>
-                        <div class="slider-description">
+                        <div class="slider-description-mobile">
                             <h3><strong>Agustinus Putra</strong></h3>
                             <p>Goodeva Technology CEO</p>
                         </div>
@@ -580,7 +636,7 @@
                         <div class="slider-image">
                             <img src="{{ asset('dooleydummy.png') }}" alt="slide 2">
                         </div>
-                        <div class="slider-description">
+                        <div class="slider-description-mobile">
                             <h3><strong>Agustinus Putra</strong></h3>
                             <p>Goodeva Technology CEO</p>
                         </div>
@@ -589,7 +645,7 @@
                         <div class="slider-image">
                             <img src="{{ asset('dooleydummy.png') }}" alt="slide 3">
                         </div>
-                        <div class="slider-description">
+                        <div class="slider-description-mobile">
                             <h3><strong>Agustinus Putra</strong></h3>
                             <p>Goodeva Technology CEO</p>
                         </div>
@@ -598,7 +654,7 @@
                         <div class="slider-image">
                             <img src="{{ asset('dooleydummy.png') }}" alt="slide 3">
                         </div>
-                        <div class="slider-description">
+                        <div class="slider-description-mobile">
                             <h3><strong>Agustinus Putra</strong></h3>
                             <p>Goodeva Technology CEO</p>
                         </div>
@@ -607,7 +663,7 @@
                         <div class="slider-image">
                             <img src="{{ asset('dooleydummy.png') }}" alt="slide 3">
                         </div>
-                        <div class="slider-description">
+                        <div class="slider-description-mobile">
                             <h3><strong>Agustinus Putra</strong></h3>
                             <p>Goodeva Technology CEO</p>
                         </div>
@@ -616,7 +672,7 @@
                         <div class="slider-image">
                             <img src="{{ asset('dooleydummy.png') }}" alt="slide 3">
                         </div>
-                        <div class="slider-description">
+                        <div class="slider-description-mobile">
                             <h3><strong>Agustinus Putra</strong></h3>
                             <p>Goodeva Technology CEO</p>
                         </div>
@@ -625,7 +681,7 @@
                         <div class="slider-image">
                             <img src="{{ asset('dooleydummy.png') }}" alt="slide 3">
                         </div>
-                        <div class="slider-description">
+                        <div class="slider-description-mobile">
                             <h3><strong>Agustinus Putra</strong></h3>
                             <p>Goodeva Technology CEO</p>
                         </div>
