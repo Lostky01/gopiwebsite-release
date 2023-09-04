@@ -92,6 +92,10 @@
             background-position: center center;
         }
 
+        .iphone-image-mini {
+            display: none;
+        }
+
         @media screen and (width:414px) {
             .android-image {
                 display: none;
@@ -106,15 +110,18 @@
             .iphone-image-mini {
                 display: block;
             }
+
             .android-image {
                 display: none;
             }
+
             .iphone-image {
                 display: none;
             }
-        }
-        .iphone-image-mini {
-            display: none;
+
+            .ordinary-phone-service {
+                display: none;
+            }
         }
     </style>
 @endsection
@@ -152,10 +159,10 @@
                     </div>
                 </div>
             </div>
-                <div class="col-lg-6" style="background-color: black; height: 50vh;">
-                </div>
-                <img src="{{ asset('gopioffice.png') }}" width="653" height="400" class="imgpeople"
-                    style="position: absolute; left: 928px; top:601px; display:block">
+            <div class="col-lg-6" style="background-color: black; height: 50vh;">
+            </div>
+            <img src="{{ asset('gopioffice.png') }}" width="653" height="400" class="imgpeople"
+                style="position: absolute; left: 928px; top:601px; display:block">
         </div>
         <div class="col-sm-12 mt-5 mb-5">
             <center>
@@ -262,20 +269,21 @@
         <section class="android-image">
             <div class="col-sm-2" style="background-color: black; height: 38vh; width: 90%; float: right;"></div>
             <img src="{{ asset('gopioffice.png') }}" width="350" height="235"
-                style="display:block; position:absolute; top:382px; left:21px">
+                style="display:block; position:absolute; top:304px; left:21px">
         </section>
         <section class="iphone-image">
             <div class="col-sm-2" style="background-color: black; height: 35vh; width: 90%; float: right;"></div>
             <img src="{{ asset('gopioffice.png') }}" width="350" height="235"
-                style="display:block; position:absolute; top:387px; left:21px">
+                style="display:block; position:absolute; top:303px; left:21px">
         </section>
         <section class="iphone-image-mini">
             <div class="col-sm-2" style="background-color: black; height: 50vh; width: 90%; float: right;"></div>
             <img src="{{ asset('gopioffice.png') }}" width="350" height="235"
-                style="display:block; position:absolute; top:387px; left:21px">
+                style="display:block; position:absolute; top:304px; left:21px">
         </section>
         <div class="col-sm-12 mt-5">
-            <h5 style="color: black;"><strong><a href="{{ route('home') }}" style="color: black;">Home</a>/</strong>What We
+            <h5 style="color: black;"><strong><a href="{{ route('home') }}" style="color: black;">Home</a>/</strong>What
+                We
                 Do</h5>
         </div>
         <div class="col-lg-6 mt-5">
@@ -351,34 +359,67 @@
                         <center>Group Companies We Service</center>
                     </strong></h1>
             </div>
-            <div class="container mt-5 text-center">
-                <div class="row justify-content-center">
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-6 mt-4">
-                                <img src="{{ asset('service1mobile.png') }}" width="130" height="150"
-                                    class="mx-2">
-                                <img src="{{ asset('service2mobile.png') }}" width="130" height="150"
-                                    class="mx-2">
+            <section class="ordinary-phone-service">
+                <div class="container mt-5 text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-6 mt-4">
+                                    <img src="{{ asset('service1mobile.png') }}" width="130" height="150"
+                                        class="mx-2">
+                                    <img src="{{ asset('service2mobile.png') }}" width="130" height="150"
+                                        class="mx-2">
+                                </div>
+                                <div class="col-md-6 mt-4">
+                                    <img src="{{ asset('service3mobile.png') }}" width="130" height="150"
+                                        class="mx-2">
+                                    <img src="{{ asset('service4mobile.png') }}" width="130" height="150"
+                                        class="mx-2">
+                                </div>
                             </div>
-                            <div class="col-md-6 mt-4">
-                                <img src="{{ asset('service3mobile.png') }}" width="130" height="150"
-                                    class="mx-2">
-                                <img src="{{ asset('service4mobile.png') }}" width="130" height="150"
-                                    class="mx-2">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mt-4">
-                                <img src="{{ asset('service5mobile.png') }}" width="130" height="150"
-                                    class="mx-2">
-                                <img src="{{ asset('service6mobile.png') }}" width="130" height="150"
-                                    class="mx-2">
+                            <div class="row">
+                                <div class="col-md-6 mt-4">
+                                    <img src="{{ asset('service5mobile.png') }}" width="130" height="150"
+                                        class="mx-2">
+                                    <img src="{{ asset('service6mobile.png') }}" width="130" height="150"
+                                        class="mx-2">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <section class="iphone-mini-image">
+                <div class="container mt-5 text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-6 mt-4">
+                                    <img src="{{ asset('service1mobile.png') }}" width="130" height="150"
+                                        class="mx-2">
+                                    <img src="{{ asset('service2mobile.png') }}" width="130" height="150"
+                                        class="mx-2 mt-4">
+                                </div>
+                                <div class="col-md-6 mt-4">
+                                    <img src="{{ asset('service3mobile.png') }}" width="130" height="150"
+                                        class="mx-2">
+                                    <img src="{{ asset('service4mobile.png') }}" width="130" height="150"
+                                        class="mx-2 mt-4">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mt-4">
+                                    <img src="{{ asset('service5mobile.png') }}" width="130" height="150"
+                                        class="mx-2">
+                                    <img src="{{ asset('service6mobile.png') }}" width="130" height="150"
+                                        class="mx-2 mt-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         </div>
     </section>
 @endsection
