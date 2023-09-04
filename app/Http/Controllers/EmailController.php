@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\SendEmail;
+use App\Models\Data;
 
 class EmailController extends Controller
 {
@@ -24,6 +25,8 @@ class EmailController extends Controller
 
         Mail::to('vndrdcan@gmail.com')->send(new SendEmail($data));
 
+        Data::create($data);
+        
         return redirect()->back()->with('message', 'Email sent successfully!');
     }
 }

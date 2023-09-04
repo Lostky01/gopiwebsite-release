@@ -201,7 +201,8 @@
                             <button type="submit" class="btn btn-primary"
                                 style="background-color: #000000; border-radius: 0 !important;">Submit</button>
                         </div>
-                    </form>
+                        <input type="hidden" name="send_email" value="1">
+                    </form>                    
                 </div>
             </div>
         </div>
