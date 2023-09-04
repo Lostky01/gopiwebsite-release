@@ -152,7 +152,7 @@
                 <div class="col-lg-6" style="background-color: black; height: 50vh;">
                 </div>
                 <img src="{{ asset('gopioffice.png') }}" width="653" height="400" class="imgpeople"
-                    style="position: absolute; left: 928px; top:506 px; display:block">
+                    style="position: absolute; left: 928px; top:601px; display:block">
         </div>
         <div class="col-sm-12 mt-5 mb-5">
             <center>
