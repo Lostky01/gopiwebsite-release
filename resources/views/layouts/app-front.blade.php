@@ -826,6 +826,10 @@ $baseurl = 'https://monitoring.globaldeva.com/';
             /* Minimal 100% tinggi viewport */
             margin: 0;
         }
+
+        .navigation-box .scrollToLink.active a {
+            font-weight: bold;
+        }
     </style>
 
 
@@ -841,36 +845,40 @@ $baseurl = 'https://monitoring.globaldeva.com/';
         <header class="site-header header-one desktop-show" style="background-color: #ffffff;">
             <nav class="navbar navbar-expand-lg navbar-light header-navigation fixed-top"
                 style="background-color: #ffffff;">
-                <div class="container clearfix">
-                    <div class="logo-box clearfix" style="margin-right: 20%; float: left;">
+                <div class="container clearfix"
+                    style="width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; margin-left:5% !important; margin-right:0px !important;">
+                    <div class="logo-box clearfix" style="display: flex !important; align-items: center !important;">
                         <a class="navbar-brand" href="{{ url('/') }}">
-                            <img src="{{ asset('gopilogo.png') }}" class="main-logo" alt="Awesome Image">
+                            <img src="{{ asset('gopilogo.png') }}" class="main-logo" alt="Awesome Image"
+                                style="margin-right: 10px !important;">
                         </a>
                         <button class="menu-toggler" data-target=".header-one .main-navigation">
                             <span class="fa fa-bars"></span>
                         </button>
                     </div>
-                    <div class="main-navigation" style="">
-                        <ul class="navigation-box one-page-scroll-menu">
-                            <li class="scrollToLink current">
-                                <a class="ex3" href="{{ route('home') }}" style="color: rgb(0, 0, 0);">Home</a>
+                    <div class="main-navigation" style="margin-left:30% !important;">
+                        <ul class="navigation-box one-page-scroll-menu" style="text-align: left;">
+                            <li class="scrollToLink {{ request()->routeIs('home') ? 'active' : '' }}">
+                                <a class="ex3" href="{{ route('home') }}"
+                                    style="color: rgb(0, 0, 0); font-size:20px;">Home</a>
                             </li>
-                            <li class="scrollToLink">
-                                <a class="ex3" href="{{ route('about') }}" style="color: rgb(0, 0, 0);">About
-                                    Us</a>
+                            <li class="scrollToLink {{ request()->routeIs('about') ? 'active' : '' }}">
+                                <a class="ex3" href="{{ route('about') }}"
+                                    style="color: rgb(0, 0, 0);  font-size:20px;">About Us</a>
                             </li>
-                            <li class="scrollToLink">
-                                <a class="ex3" href="{{ route('whatwedo') }}" style="color: rgb(0, 0, 0);">What
-                                    We Do</a>
+                            <li class="scrollToLink {{ request()->routeIs('whatwedo') ? 'active' : '' }}">
+                                <a class="ex3" href="{{ route('whatwedo') }}"
+                                    style="color: rgb(0, 0, 0);  font-size:20px;">What We Do</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="right-side-box warna-logout" style="float: right;">
-                        <form action="{{ route('contact') }}">
-                            <button type="submit" class="btn btn-primary"
-                                style="background-color: #40A6D3; border-radius: 0 !important;">Contact Us !</button>
-                        </form>
-                    </div>
+                </div>
+                
+                <div class="right-side-box warna-logout" style="margin-left:20% !important;">
+                    <form action="{{ route('contact') }}">
+                        <button type="submit" class="btn btn-primary"
+                            style="background-color: #40A6D3; border-radius: 0 !important;">Contact Us !</button>
+                    </form>
                 </div>
             </nav>
         </header>
@@ -911,79 +919,82 @@ $baseurl = 'https://monitoring.globaldeva.com/';
                 </div>
             </nav>
         </header>
-
+        <br><br><br>
         @yield('content')
-        <footer class="site-footer desktop-show" style="background-color: black; height:40%">
+        <footer class="site-footer desktop-show"
+            style="background-color: #1E1E1E; height:50vh; padding-top: 116px; padding-bottom: 60px; padding-left:70px; padding-right:60px">
             <div class="">
                 <div class="row">
-                    <div class="row">
+                    <div class="row" style="width: 100%">
                         <div class="col-md-5">
-                            <img src="{{ asset('logofooter.png') }}" alt="logo" width="390" height="90"
-                                class="mt-5 ml-5">
+                            <img src="{{ asset('logofooter.png') }}" alt="logo" width="540" height="180"
+                                class="mt-5" style="margin-left: 10% !important;">
                         </div>
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <p style="color: #FFCE2D"><strong>Addres : </strong></p>
-                                    <p style="color: white">GOODEVA CBD Division, Grand Galaxy CommercialRSK 6 No. 15,
+                                    <p style="color: #FFCE2D; margin-bottom: 2px !important; font-size: 26px;">Address :</p>
+                                    <p style="color: white; font-size: 20px;">GOODEVA CBD Division, Grand <br> Galaxy CommercialRSK 6 No.
+                                        <br> 15,
                                         Kota Bekasi
                                     </p>
                                 </div>
-                                <div class="col-md-6">
-                                    <p style="color: #FFCE2D"><strong>Phone : </strong></p>
-                                    <p style="color: white">(021) 8273-8692 </p>
+                                <div class="col-sm-6" style="height: 10vh !important;">
+                                    <p style="color: #FFCE2D; margin-bottom:2px !important; font-size: 26px;">Phone :</p>
+                                    <p style="color: white; font-size: 20px;">(021) 8273-8692 </p>
+                                    <p style="color: #FFCE2D; margin-bottom:2px !important; margin-top:20px !important; font-size: 26px;">Email :</p>
+                                    <p style="color: white; font-size: 20px;">globalpristiya@gopi.com</p>
                                 </div>
-                                <div class="col-md-6">
-                                    <div
-                                        style=" color: white;  font-family: Montserrat; font-weight: 700; text-transform: capitalize; line-height: 31.92px;">
+                                <div class="col-md-6 mt-5">
+                                    <div style="color: white; font-size: 28px; font-weight: bold; text-transform: capitalize; line-height: 31.92px;"
+                                        class="mb-2">
                                         Follow Us</div>
-                                    <a href=""><i class="fa fa-youtube-play"
-                                            style="font-size:36px; color:white"></i></a>
-                                    <a href=""><i class="fa fa-twitter" style="font-size:36px; color:white">
-                                        </i></a>
-                                    <a href=""><i class="fa fa-instagram"
-                                            style="font-size:36px; color:white"></i></a>
-                                    <a href=""><i class="fa fa-facebook-square"
-                                            style="font-size:36px; color:white"></i></a>
+                                    <a href=""><i class="fa fa-youtube-play mr-3"
+                                            style="font-size: 40px; color: white;"></i></a>
+                                    <a href=""><i class="fa fa-twitter mx-3"
+                                            style="font-size: 40px; color: white;"></i></a>
+                                    <a href=""><i class="fa fa-instagram mx-3"
+                                            style="font-size: 40px; color: white;"></i></a>
+                                    <a href=""><i class="fa fa-facebook-square mx-3"
+                                            style="font-size: 40px; color: white;"></i></a>
                                 </div>
-                                <div class="col-md-6">
-                                    <p style="color: #FFCE2D"><strong>Email :</strong></p>
-                                    <p style="color: white">globalpristiya@gopi.com</p>
-                                </div>
+                                
                             </div>
-                        </div>
+                        </div>                        
                     </div>
                 </div>
             </div>
         </footer>
         <footer class="site-footer mobile-show"
-            style="background-color: black; padding-top: 10px; padding-bottom: 10px;">
+            style="background-color: #1E1E1E; padding-top: 10px; padding-bottom: 10px;">
             <div class="col-lg-5" style="margin-top: 20px !important;">
                 <img src="{{ asset('logofooter.png') }}" alt="logo" width="255" height="60"
                     style="margin-top: 20px !important;">
             </div>
             <section style="margin-top:2%">
                 <div class="col-md-4">
-                    <p style="color: #FFCE2D"><strong>Addres : </strong></p>
+                    <p style="color: #FFCE2D; font-weight: bold; margin-bottom:2px">Address :</p>
                     <p style="color: white">GOODEVA CBD Division, Grand Galaxy CommercialRSK 6 No. 15, Kota Bekasi
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <p style="color: #FFCE2D"><strong>Phone : </strong></p>
+                    <p style="color: #FFCE2D; margin-bottom:2px"><strong>Phone : </strong></p>
                     <p style="color: white">(021) 8273-8692 </p>
                 </div>
                 <div class="col-md-2">
-                    <p style="color: #FFCE2D"><strong>Email :</strong></p>
+                    <p style="color: #FFCE2D; margin-bottom:2px"><strong>Email :</strong></p>
                     <p style="color: white">globalpristiya@gopi.com</p>
                 </div>
                 <div class="col-md-4">
-                    <div
-                        style=" color: white;  font-family: Montserrat; font-weight: 700; text-transform: capitalize; line-height: 31.92px;">
+                    <div style=" color: white; font-size:25px;  font-family: Montserrat; font-weight: 700; text-transform: capitalize; line-height: 31.92px;"
+                        class="mb-2">
                         Follow Us</div>
-                    <a href=""><i class="fa fa-youtube-play" style="font-size:36px; color:white"> </i></a>
-                    <a href=""><i class="fa fa-twitter" style="font-size:36px; color:white"> </i></a>
-                    <a href=""><i class="fa fa-instagram" style="font-size:36px; color:white"> </i></a>
-                    <a href=""><i class="fa fa-facebook-square" style="font-size:36px; color:white"> </i></a>
+                    <a href=""><i class="fa fa-youtube-play mx-2" style="font-size:24px; color:white"></i></a>
+                    <a href=""><i class="fa fa-twitter mx-2" style="font-size:24px; color:white">
+                        </i></a>
+                    <a href=""><i class="fa fa-instagram mx-2" style="font-size:24px; color:white"></i></a>
+                    <a href=""><i class="fa fa-facebook-square mx-2"
+                            style="font-size:24px; color:white"></i></a>
                 </div>
             </section>
         </footer>
@@ -1063,6 +1074,8 @@ $baseurl = 'https://monitoring.globaldeva.com/';
                 slideShadows: false,
             }
         });
+
+        document
     </script>
 
 </body>
