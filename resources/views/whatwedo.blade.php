@@ -102,11 +102,14 @@
             }
         }
 
-        @media screen and (width:320px) {
+        @media screen and (max-width:320px) {
             .iphone-image-mini {
                 display: block;
             }
             .android-image {
+                display: none;
+            }
+            .iphone-image {
                 display: none;
             }
         }
@@ -256,10 +259,6 @@
                 </h2>
             </div>
         </div>
-        <div class="col-sm-12 mt-5">
-            <h5 style="color: black;"><strong><a href="{{ route('home') }}" style="color: black;">Home</a>/</strong>What We
-                Do</h5>
-        </div>
         <section class="android-image">
             <div class="col-sm-2" style="background-color: black; height: 38vh; width: 90%; float: right;"></div>
             <img src="{{ asset('gopioffice.png') }}" width="350" height="235"
@@ -275,6 +274,10 @@
             <img src="{{ asset('gopioffice.png') }}" width="350" height="235"
                 style="display:block; position:absolute; top:387px; left:21px">
         </section>
+        <div class="col-sm-12 mt-5">
+            <h5 style="color: black;"><strong><a href="{{ route('home') }}" style="color: black;">Home</a>/</strong>What We
+                Do</h5>
+        </div>
         <div class="col-lg-6 mt-5">
             <div class="col-md-5 mt-5">
                 <h1 style="color: black"><strong>What We Do</strong></h1>
