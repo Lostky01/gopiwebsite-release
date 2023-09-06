@@ -95,6 +95,7 @@
         .iphone-image-mini {
             display: none;
         }
+
         .iphone-mini-image {
             display: none;
         }
@@ -125,6 +126,7 @@
             .ordinary-phone-service {
                 display: none;
             }
+
             .iphone-mini-image {
                 display: none;
             }
@@ -238,21 +240,21 @@
             <div class="container mt-5 justify-content-center">
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="{{ asset('service1.png') }}">
+                        <a href="https://odeva.co.id/"><img src="{{ asset('service1.png') }}"></a>
                     </div>
                     <div class="col-md-4">
-                        <img src="{{ asset('service2.png') }}">
+                        <a href="https://www.goodeva.co.id/"><img src="{{ asset('service2.png') }}"></a>
                     </div>
                     <div class="col-md-4">
-                        <img src="{{ asset('service3.png') }}">
+                        <a href="https://www.gagoo.id/"><img src="{{ asset('service3.png') }}"></a>
                     </div>
                 </div>
                 <div class="row mt-5">
                     <div class="col-md-4">
-                        <img src="{{ asset('service4.png') }}">
+                        <a href="https://digideva.id/"><img src="{{ asset('service4.png') }}"></a>
                     </div>
                     <div class="col-md-4">
-                        <img src="{{ asset('service5.png') }}">
+                        <a href="https://situkang.com/"><img src="{{ asset('service5.png') }}"></a>
                     </div>
                     <div class="col-md-4">
                         <img src="{{ asset('service6.png') }}">
@@ -371,22 +373,22 @@
                         <div class="col-md-12">
                             <div class="row">
                                 <div class="col-md-6 mt-4">
-                                    <img src="{{ asset('service1mobile.png') }}" width="130" height="150"
-                                        class="mx-2">
-                                    <img src="{{ asset('service2mobile.png') }}" width="130" height="150"
-                                        class="mx-2">
+                                    <a href="https://odeva.co.id/"><img src="{{ asset('service1mobile.png') }}"
+                                            width="130" height="150" class="mx-2"></a>
+                                    <a href="https://www.goodeva.co.id/"><img src="{{ asset('service2mobile.png') }}"
+                                            width="130" height="150" class="mx-2"></a>
                                 </div>
                                 <div class="col-md-6 mt-4">
-                                    <img src="{{ asset('service3mobile.png') }}" width="130" height="150"
-                                        class="mx-2">
-                                    <img src="{{ asset('service4mobile.png') }}" width="130" height="150"
-                                        class="mx-2">
+                                    <a href="https://www.gagoo.id/"><img src="{{ asset('service3mobile.png') }}"
+                                            width="130" height="150" class="mx-2"></a>
+                                    <a href="https://digideva.id/"><img src="{{ asset('service4mobile.png') }}"
+                                            width="130" height="150" class="mx-2"></a>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mt-4">
-                                    <img src="{{ asset('service5mobile.png') }}" width="130" height="150"
-                                        class="mx-2">
+                                    <a href="https://situkang.com/"><img src="{{ asset('service5mobile.png') }}"
+                                            width="130" height="150" class="mx-2"></a>
                                     <img src="{{ asset('service6mobile.png') }}" width="130" height="150"
                                         class="mx-2">
                                 </div>
@@ -401,22 +403,22 @@
                         <div class="col-md-12">
                             <div class="row">
                                 <div class="col-md-6 mt-4">
-                                    <img src="{{ asset('service1mobile.png') }}" width="130" height="150"
-                                        class="mx-2">
-                                    <img src="{{ asset('service2mobile.png') }}" width="130" height="150"
-                                        class="mx-2 mt-4">
+                                    <a href="https://odeva.co.id/"><img src="{{ asset('service1mobile.png') }}"
+                                            width="130" height="150" class="mx-2"></a>
+                                    <a href="https://www.goodeva.co.id/"><img src="{{ asset('service2mobile.png') }}"
+                                            width="130" height="150" class="mx-2 mt-4"></a>
                                 </div>
                                 <div class="col-md-6 mt-4">
-                                    <img src="{{ asset('service3mobile.png') }}" width="130" height="150"
-                                        class="mx-2">
-                                    <img src="{{ asset('service4mobile.png') }}" width="130" height="150"
-                                        class="mx-2 mt-4">
+                                    <a href="https://www.gagoo.id/"><img src="{{ asset('service3mobile.png') }}"
+                                            width="130" height="150" class="mx-2"></a>
+                                    <a href="https://digideva.id/"><img src="{{ asset('service4mobile.png') }}"
+                                            width="130" height="150" class="mx-2 mt-4"></a>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mt-4">
-                                    <img src="{{ asset('service5mobile.png') }}" width="130" height="150"
-                                        class="mx-2">
+                                    <a href="https://situkang.com/"><img src="{{ asset('service5mobile.png') }}"
+                                            width="130" height="150" class="mx-2"></a>
                                     <img src="{{ asset('service6mobile.png') }}" width="130" height="150"
                                         class="mx-2 mt-4">
                                 </div>
