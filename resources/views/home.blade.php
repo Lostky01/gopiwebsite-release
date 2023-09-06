@@ -364,7 +364,7 @@
             <img src="{{ asset('people.png') }}" width="653" height="400" class="imgpeopledesktop"
                 style="position: absolute; left: 883px; top:867px; display:block">
         </div>
-        <div class="container" style="max-width: 1500px;">
+        <div class="container" style="max-width: 1500px; padding-top:10%">
             <h1 style="color: black; text-align: center;"><strong>Business Strategy</strong></h1>
             <div class="row">
                 <div class="col-sm-6 mx-auto mt-5">

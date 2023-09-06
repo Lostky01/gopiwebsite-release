@@ -712,7 +712,7 @@ $baseurl = 'https://monitoring.globaldeva.com/';
 
         .swiper-pagination-bullet {
             background: transparent none repeat scroll 0 0;
-            border: 1px solid #ee0f6f;
+            border: 1px solid #000000;
             border-radius: 10px;
             display: inline-block;
             height: 10px;
@@ -724,8 +724,8 @@ $baseurl = 'https://monitoring.globaldeva.com/';
         }
 
         .swiper-pagination-bullet-active {
-            background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #ee0f6f 0%, #f89482 100%) repeat scroll 0 0;
-            background: rgba(0, 0, 0, 0) linear-gradient(to right, #ee0f6f 0%, #f89482 100%) repeat scroll 0 0;
+            background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #000000 0%, #ffffff 100%) repeat scroll 0 0;
+            background: rgba(0, 0, 0, 0) linear-gradient(to right, #000000 0%, #ffffff 100%) repeat scroll 0 0;
             border: medium none;
             height: 12px;
             opacity: 1;
@@ -876,7 +876,7 @@ $baseurl = 'https://monitoring.globaldeva.com/';
                 <div class="right-side-box warna-logout" style="margin-left:20% !important;">
                     <form action="{{ route('contact') }}">
                         <button type="submit" class="btn btn-primary"
-                            style="background-color: #40A6D3; border-radius: 0 !important;">Contact Us !</button>
+                        style="{{ request()->routeIs('whatwedo') ? 'background-color: #F1343B; border-radius: 0 !important;' : 'background-color: #40A6D3; border-radius: 0 !important;' }}">Contact Us !</button>
                     </form>
                 </div>
             </nav>
@@ -906,11 +906,20 @@ $baseurl = 'https://monitoring.globaldeva.com/';
                                 <li class="scrollToLink">
                                     <a class="ex3" href="{{ route('about') }}" style="color: rgb(0, 0, 0);">About
                                         Us</a>
-                                </li>
+                                </li>                              
                                 <li class="scrollToLink">
                                     <a class="ex3" href="{{ route('whatwedo') }}"
                                         style="color: rgb(0, 0, 0);">What
                                         We Do</a>
+                                </li>
+                                <li class="scrollToLink">
+                                    <form action="{{ route('contact') }}">
+                                        <button type="submit" class="btn btn-primary"
+                                        style="{{ request()->routeIs('whatwedo') ? 'background-color: #F1343B; border-radius: 0 !important; width:100%;' : 'background-color: #40A6D3; border-radius: 0 !important; width:100%;' }}">Contact Us !</button>
+                                    </form>
+                                </li>
+                                <li class="scrollToLink">
+                                    <p style="color: white"></p>
                                 </li>
                             </ul>
                         </div>
