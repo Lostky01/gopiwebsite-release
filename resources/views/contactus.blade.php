@@ -171,8 +171,10 @@
                     <p style="color: black"><strong>Follow Us</strong></p>
                     <a href=""><i class="fa fa-youtube-play" style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
                     <a href=""><i class="fa fa-twitter" style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
-                    <a href="https://www.instagram.com/goodeva.id/?hl=id"><i class="fa fa-instagram" style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
-                    <a href="https://www.facebook.com/globalpristya"><i class="fa fa-facebook-square" style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
+                    <a href="https://www.instagram.com/goodeva.id/?hl=id"><i class="fa fa-instagram"
+                            style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
+                    <a href="https://www.facebook.com/globalpristya"><i class="fa fa-facebook-square"
+                            style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
                 </div>
                 <div class="col-lg-8">
                     <form method="post" action="{{ route('send.email') }}">
@@ -202,7 +204,7 @@
                                 style="background-color: #000000; border-radius: 0 !important;">Submit</button>
                         </div>
                         <input type="hidden" name="send_email" value="1">
-                    </form>                    
+                    </form>
                 </div>
             </div>
         </div>
@@ -271,5 +273,35 @@
         function Contact() {
             window.location.href = "{{ route('contact') }}"
         }
+        $(document).ready(function() {
+            $('#collapseExample2').on('show.bs.collapse', function() {
+                $('#collapseButton').text("Read Less");
+            });
+
+            $('#collapseExample2').on('hide.bs.collapse', function() {
+                $('#collapseButton').text("Read More");
+            });
+        });
+        var swiper = new Swiper('.swiper-container.two', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            effect: 'coverflow',
+            loop: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflow: {
+                rotate: 0,
+                stretch: 100,
+                depth: 150,
+                modifier: 1.5,
+                slideShadows: false,
+            }
+        });
     </script>
 @endsection

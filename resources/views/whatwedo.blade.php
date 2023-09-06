@@ -431,3 +431,40 @@
         </div>
     </section>
 @endsection
+@section('js-after')
+    <script>
+        function Contact() {
+            window.location.href = "{{ route('contact') }}"
+        }
+        $(document).ready(function() {
+            $('#collapseExample2').on('show.bs.collapse', function() {
+                $('#collapseButton').text("Read Less");
+            });
+
+            $('#collapseExample2').on('hide.bs.collapse', function() {
+                $('#collapseButton').text("Read More");
+            });
+        });
+        var swiper = new Swiper('.swiper-container.two', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            effect: 'coverflow',
+            loop: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflow: {
+                rotate: 0,
+                stretch: 100,
+                depth: 150,
+                modifier: 1.5,
+                slideShadows: false,
+            }
+        });
+    </script>
+@endsection

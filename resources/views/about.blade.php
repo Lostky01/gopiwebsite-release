@@ -127,12 +127,15 @@
             /* or background-size: contain; */
             background-position: center;
         }
+
         .ordinary-phone {
             display: block;
         }
+
         .iphone-mini {
             display: none;
         }
+
         .iphone-mid {
             display: none;
         }
@@ -145,22 +148,27 @@
             .iphone-mid {
                 display: block;
             }
+
             .ordinary-phone {
                 display: none;
             }
         }
+
         @media screen and (width:320px) {
             .iphone-mini {
                 display: block;
             }
+
             .ordinary-phone {
                 display: none;
             }
         }
+
         @media screen and (max-width: 360px) and (max-height: 780px) {
             .iphone-semi-mid {
                 display: block;
             }
+
             .ordinary-phone {
                 display: none;
             }
@@ -184,7 +192,7 @@
             <div class="col-lg-8 mt-5">
                 <h5 style="color: black; margin-left:15%"><strong><a href="{{ route('home') }}"
                             style="color: black;">Home</a>/</strong>About us</h5>
-                <div class="col-md-6" style="margin-left:25%">
+                <div class="col-md-6" style="margin-left:30%">
                     <h1 style="color: black"><strong>About Us</strong></h1>
                     <p style="color: black">PT Global Pristiya Group is a company that continues to grow and develop for the
                         better in Indonesia with main businesses engaged in the digital innovation sector, Digital Marketing
@@ -352,9 +360,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"
+                    style="position: absolute; width: 300px; height: 100px; color: rgba(255, 255, 255, 0);">
+                    <img src="{{ asset('slidekiri.png') }}" alt="Prev">
+                </div>
+                <div class="swiper-button-next"
+                    style="position: absolute; width: 300px; height: 100px; color : rgba(255, 255, 255, 0); padding-left:50px">
+                    <img src="{{ asset('slidekanan.png') }}" alt="Next">
+                </div>
             </div>
-
+            <div class="swiper-pagination"></div>
         </div>
     </section>
     <section class="mobile-show">
@@ -576,10 +591,56 @@
                             <p>Goodeva Technology CEO</p>
                         </div>
                     </div>
+                    <div class="swiper-button-prev"
+                        style="position: absolute; width: 300px; height: 100px; color: rgba(255, 255, 255, 0);">
+                        <img src="{{ asset('slidekiri.png') }}" alt="Prev">
+                    </div>
+                    <div class="swiper-button-next"
+                        style="position: absolute; width: 300px; height: 100px; color : rgba(255, 255, 255, 0); padding-left:50px">
+                        <img src="{{ asset('slidekanan.png') }}" alt="Next">
+                    </div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
 
         </div>
     </section>
+@endsection
+
+@section('js-after')
+    <script>
+        function Contact() {
+            window.location.href = "{{ route('contact') }}"
+        }
+        $(document).ready(function() {
+            $('#collapseExample2').on('show.bs.collapse', function() {
+                $('#collapseButton').text("Read Less");
+            });
+
+            $('#collapseExample2').on('hide.bs.collapse', function() {
+                $('#collapseButton').text("Read More");
+            });
+        });
+        var swiper = new Swiper('.swiper-container.two', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            effect: 'coverflow',
+            loop: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflow: {
+                rotate: 0,
+                stretch: 100,
+                depth: 150,
+                modifier: 1.5,
+                slideShadows: false,
+            }
+        });
+    </script>
 @endsection

@@ -345,7 +345,7 @@
                         consumer-focused group in Indonesia: Global Pristya. We are here to design, build and enable digital
                         transformation within the ecosystem.</p>
                     <div class="collapse" id="collapseExample2">
-                        <div>
+                        <div> <p style="color: black; font-size: 20px;">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
                             Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
                             proident.
