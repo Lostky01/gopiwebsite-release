@@ -290,15 +290,19 @@
             .iphone-mini {
                 display: block;
             }
+
             .ordinary-phone {
                 display: none;
             }
+
             .android-join {
                 display: none;
             }
+
             .iphone-join {
                 display: none;
             }
+
             .iphone-join-mini {
                 display: block;
             }
@@ -328,9 +332,10 @@
         </div>
         <div class="row mt-5">
             <div class="col-lg-6 mt-5">
-                <div class="col-md-5 mt-5" style="margin-left: 40%">
-                    <h1 style="color: black"><strong>Overview</strong></h1>
-                    <p style="color: black">Our journey started in 2018 as the newest digital catalyst within the largest
+                <div class="col-md-5 mt-5" style="margin-left: 30%">
+                    <h1 style="color: black; font-size: 30px;"><strong>Overview</strong></h1>
+                    <p style="color: black; font-size: 20px;">Our journey started in 2018 as the newest digital catalyst
+                        within the largest
                         consumer-focused group in Indonesia: Global Pristya. We are here to design, build and enable digital
                         transformation within the ecosystem.</p>
                     <div class="collapse" id="collapseExample2">
@@ -342,7 +347,7 @@
                     </div>
                     <div class="button-container">
                         <a href="#collapseExample2" class="btn btn-primary" id="collapseButton"
-                            style="height:20%; background-color: #000000; border-radius: 0 !important;"
+                            style="height: 20%; font-size: 20px; background-color: #000000; border-radius: 0 !important;"
                             data-toggle="collapse" data-target="#collapseExample2">Read More</a>
                     </div>
                 </div>
@@ -351,7 +356,7 @@
                 <!-- Isi konten dari col-lg-6 -->
             </div>
             <img src="{{ asset('people.png') }}" width="653" height="400" class="imgpeopledesktop"
-                style="position: relative; left: 915px; top:-455px; display:block">
+                style="position: absolute; left: 883px; top:867px; display:block">
         </div>
         <div class="container" style="max-width: 1500px;">
             <h1 style="color: black; text-align: center;"><strong>Business Strategy</strong></h1>
@@ -571,6 +576,12 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-button-prev" style="position: absolute; width: 300px; height: 100px; color: rgba(255, 255, 255, 0);">
+                    <img src="{{ asset('slidekiri.png') }}" alt="Prev">
+                </div>
+                <div class="swiper-button-next" style="position: absolute; width: 300px; height: 100px; color : rgba(255, 255, 255, 0);">
+                    <img src="{{ asset('slidekanan.png') }}" alt="Next">
+                </div>                
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -586,8 +597,8 @@
                         Grow Together To Achieve Goals!
                     </p>
                     <a href="{{ route('contact') }}" class="contact mt-5"
-                        style="font-size: 24px; color: #ffffff; background-color:rgba(30, 30, 30, 0.74) ; padding: 20px; border-radius: 5px;">
-                        Join with us <img src="{{ asset('panah.svg') }}" alt="Panag SVG">
+                        style="font-size: 24px; color: #ffffff; background-color:rgba(30, 30, 30, 0.74) ; padding: 20px; border-radius: 0px !important; width: 300px;">
+                        Join with us <img src="{{ asset('panah.svg') }}" alt="Panag SVG" style="padding-left:36% ">
                     </a>
                 </div>
             </div>
@@ -643,7 +654,7 @@
         </div>
         <div class="col-sm-12 mt-5 mb-5">
             <center>
-                <h1 style="color: black"><strong>Business Sector</strong></h1>
+                <h1 style="color: black"><strong>Business Unit</strong></h1>
             </center>
         </div>
         <section class="android">
@@ -804,9 +815,10 @@
                 <div class="background-imageoffice-mobile">
                     <div class="left"
                         style="position: absolute; top: 25px; left: -10px; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 20px; border-radius: 3px;">
-                        <h1 class="contact" style="font-size: 25px; color: #ffffff; margin-bottom: 10px; line-height: 1.5;">
+                        <h1 class="contact"
+                            style="font-size: 25px; color: #ffffff; margin-bottom: 10px; line-height: 1.5;">
                             <strong>Create Good<br> Business With Us</strong>
-                        </h1>                        
+                        </h1>
                         <p class="contact" style="font-size: 16px; color: #FFCE2D; padding-bottom: 50px;">Grow Together To
                             Achieve Goals!</p>
                         <a href="{{ route('contact') }}" class="contact"
@@ -833,6 +845,27 @@
             $('#collapseExample2').on('hide.bs.collapse', function() {
                 $('#collapseButton').text("Read More");
             });
+        });
+        var swiper = new Swiper('.swiper-container.two', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            effect: 'coverflow',
+            loop: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflow: {
+                rotate: 0,
+                stretch: 100,
+                depth: 150,
+                modifier: 1.5,
+                slideShadows: false,
+            }
         });
     </script>
 @endsection

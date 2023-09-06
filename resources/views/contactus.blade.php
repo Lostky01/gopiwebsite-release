@@ -171,8 +171,8 @@
                     <p style="color: black"><strong>Follow Us</strong></p>
                     <a href=""><i class="fa fa-youtube-play" style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
                     <a href=""><i class="fa fa-twitter" style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
-                    <a href=""><i class="fa fa-instagram" style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
-                    <a href=""><i class="fa fa-facebook-square" style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
+                    <a href="https://www.instagram.com/goodeva.id/?hl=id"><i class="fa fa-instagram" style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
+                    <a href="https://www.facebook.com/globalpristya"><i class="fa fa-facebook-square" style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
                 </div>
                 <div class="col-lg-8">
                     <form method="post" action="{{ route('send.email') }}">

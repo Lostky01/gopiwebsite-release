@@ -95,6 +95,9 @@
         .iphone-image-mini {
             display: none;
         }
+        .iphone-mini-image {
+            display: none;
+        }
 
         @media screen and (width:414px) {
             .android-image {
@@ -120,6 +123,9 @@
             }
 
             .ordinary-phone-service {
+                display: none;
+            }
+            .iphone-mini-image {
                 display: none;
             }
         }
@@ -169,7 +175,7 @@
                 <h1 style="color: black"><strong>Business Unit</strong></h1>
             </center>
         </div>
-        <div class="container">
+        <div class="container mb-5">
             <div class="row">
                 <div class="col-md-4">
                     <div class="image-containerspecial">
@@ -197,7 +203,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 mt-4">
                     <div class="image-containerspecial">
                         <img src="{{ asset('gambar4.png') }}" alt="Gambar 4">
                         <div class="image-text">
@@ -205,7 +211,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mt-4">
                     <div class="image-containerspecial">
                         <img src="{{ asset('gambar5.png') }}" alt="Gambar 5">
                         <div class="image-text">
@@ -213,7 +219,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mt-4">
                     <div class="image-containerspecial">
                         <img src="{{ asset('gambar6.png') }}" alt="Gambar 6">
                         <div class="image-text">
@@ -223,7 +229,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-12" style="background-color: #1E1E1E; padding-bottom: 50px;">
+        <div class="col-lg-12" style="background-color: #1E1E1E; padding-bottom: 50px; padding-top:10px">
             <div class="col-sm-12 mt-5">
                 <h1 style="color: white"><strong>
                         <center>Group Companies We Service</center>

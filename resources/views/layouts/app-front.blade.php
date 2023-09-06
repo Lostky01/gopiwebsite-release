@@ -59,11 +59,6 @@ $baseurl = 'https://monitoring.globaldeva.com/';
     @yield('css')
 
     <style>
-        a.ex3:hover,
-        a.ex3:active {
-            background: rgb(255, 222, 35);
-        }
-
         .logo-box,
         .main-navigation {
             float: left;
@@ -830,6 +825,10 @@ $baseurl = 'https://monitoring.globaldeva.com/';
         .navigation-box .scrollToLink.active a {
             font-weight: bold;
         }
+
+        .navigation-box .scrollToLink:hover a {
+            font-weight: bold;
+        }
     </style>
 
 
@@ -873,7 +872,7 @@ $baseurl = 'https://monitoring.globaldeva.com/';
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="right-side-box warna-logout" style="margin-left:20% !important;">
                     <form action="{{ route('contact') }}">
                         <button type="submit" class="btn btn-primary"
@@ -933,16 +932,21 @@ $baseurl = 'https://monitoring.globaldeva.com/';
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <p style="color: #FFCE2D; margin-bottom: 2px !important; font-size: 26px;">Address :</p>
-                                    <p style="color: white; font-size: 20px;">GOODEVA CBD Division, Grand <br> Galaxy CommercialRSK 6 No.
+                                    <p style="color: #FFCE2D; margin-bottom: 2px !important; font-size: 26px;">Address
+                                        :</p>
+                                    <p style="color: white; font-size: 20px;">GOODEVA CBD Division, Grand <br> Galaxy
+                                        CommercialRSK 6 No.
                                         <br> 15,
                                         Kota Bekasi
                                     </p>
                                 </div>
                                 <div class="col-sm-6" style="height: 10vh !important;">
-                                    <p style="color: #FFCE2D; margin-bottom:2px !important; font-size: 26px;">Phone :</p>
+                                    <p style="color: #FFCE2D; margin-bottom:2px !important; font-size: 26px;">Phone :
+                                    </p>
                                     <p style="color: white; font-size: 20px;">(021) 8273-8692 </p>
-                                    <p style="color: #FFCE2D; margin-bottom:2px !important; margin-top:20px !important; font-size: 26px;">Email :</p>
+                                    <p
+                                        style="color: #FFCE2D; margin-bottom:2px !important; margin-top:20px !important; font-size: 26px;">
+                                        Email :</p>
                                     <p style="color: white; font-size: 20px;">globalpristiya@gopi.com</p>
                                 </div>
                                 <div class="col-md-6 mt-5">
@@ -953,14 +957,16 @@ $baseurl = 'https://monitoring.globaldeva.com/';
                                             style="font-size: 40px; color: white;"></i></a>
                                     <a href=""><i class="fa fa-twitter mx-3"
                                             style="font-size: 40px; color: white;"></i></a>
-                                    <a href=""><i class="fa fa-instagram mx-3"
+                                    <a href="https://www.instagram.com/goodeva.id/?hl=id"><i
+                                            class="fa fa-instagram mx-3"
                                             style="font-size: 40px; color: white;"></i></a>
-                                    <a href=""><i class="fa fa-facebook-square mx-3"
+                                    <a href="https://www.facebook.com/globalpristya"><i
+                                            class="fa fa-facebook-square mx-3"
                                             style="font-size: 40px; color: white;"></i></a>
                                 </div>
-                                
+
                             </div>
-                        </div>                        
+                        </div>
                     </div>
                 </div>
             </div>
@@ -992,8 +998,9 @@ $baseurl = 'https://monitoring.globaldeva.com/';
                     <a href=""><i class="fa fa-youtube-play mx-2" style="font-size:24px; color:white"></i></a>
                     <a href=""><i class="fa fa-twitter mx-2" style="font-size:24px; color:white">
                         </i></a>
-                    <a href=""><i class="fa fa-instagram mx-2" style="font-size:24px; color:white"></i></a>
-                    <a href=""><i class="fa fa-facebook-square mx-2"
+                    <a href="https://www.instagram.com/goodeva.id/?hl=id"><i class="fa fa-instagram mx-2"
+                            style="font-size:24px; color:white"></i></a>
+                    <a href="https://www.facebook.com/globalpristya"><i class="fa fa-facebook-square mx-2"
                             style="font-size:24px; color:white"></i></a>
                 </div>
             </section>
@@ -1060,8 +1067,14 @@ $baseurl = 'https://monitoring.globaldeva.com/';
         }
 
         var swiper = new Swiper('.swiper-container.two', {
-            pagination: '.swiper-pagination',
-            paginationClickable: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
             effect: 'coverflow',
             loop: true,
             centeredSlides: true,
@@ -1074,12 +1087,7 @@ $baseurl = 'https://monitoring.globaldeva.com/';
                 slideShadows: false,
             }
         });
-
-        document
     </script>
 
 </body>
-
-
-
 </html>
