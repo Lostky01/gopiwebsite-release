@@ -579,7 +579,7 @@
                 <div class="swiper-button-prev" style="position: absolute; width: 300px; height: 100px; color: rgba(255, 255, 255, 0);">
                     <img src="{{ asset('slidekiri.png') }}" alt="Prev">
                 </div>
-                <div class="swiper-button-next" style="position: absolute; width: 300px; height: 100px; color : rgba(255, 255, 255, 0);">
+                <div class="swiper-button-next" style="position: absolute; width: 300px; height: 100px; color : rgba(255, 255, 255, 0); padding-left:50px">
                     <img src="{{ asset('slidekanan.png') }}" alt="Next">
                 </div>                
             </div>
