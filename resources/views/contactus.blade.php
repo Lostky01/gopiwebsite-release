@@ -157,7 +157,7 @@
             <div class="col-md-12 d-flex justify-content-center align-items-center" style="height: 30vh;">
                 <div class="text-center">
                     <h1 style="color: black"><strong>Join With Us !</strong></h1>
-                    <p style="color: black">Are you interested in joining us? We warmly welcome you to contact us here.</p>
+                    <p style="color: black">Are you interested in joining us? We warmly <br> welcome you to contact us here.</p>
                 </div>
             </div>
             <div class="row mb-3">

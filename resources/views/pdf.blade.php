@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Data PDF</title>
     <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.cdnfonts.com/css/cartogothic-std" rel="stylesheet">
+
+
     <style>
         /* Tambahkan CSS kustom untuk tampilan PDF di sini */
         /* Contoh CSS untuk mengatur tampilan tabel */
@@ -13,16 +17,27 @@
             margin-bottom: 20px;
         }
 
-        table, th, td {
+        table,
+        th,
+        td {
             border: 1px solid #e0e0e0;
         }
 
-        th, td {
+        th,
+        td {
             padding: 10px;
             text-align: left;
         }
+
+
+        @import url('https://fonts.cdnfonts.com/css/cartogothic-std');
+
+        h1 {
+            font-family: 'CartoGothic Std', sans-serif !important;
+        }
     </style>
 </head>
+
 <body>
     <h1 class="mb-4">Submitted E-Mail</h1>
     <table class="table table-bordered">
@@ -48,4 +63,5 @@
         </tbody>
     </table>
 </body>
+
 </html>
