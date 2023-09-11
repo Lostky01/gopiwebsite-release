@@ -69,7 +69,7 @@
 
         .img-description-mobile {
             position: absolute;
-            top: 80%;
+            top: 70%;
             left: 35%;
             transform: translate(-50%, -50%);
             text-align: left;
@@ -371,7 +371,6 @@
                     <img src="{{ asset('slidekanan.png') }}" alt="Next">
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
         </div>
     </section>
     <section class="mobile-show">
@@ -386,36 +385,36 @@
             </div>
         </div>
         <section class="ordinary-phone">
-            <div class="col-sm-2" style="background-color: black; height: 53vh; width: 90%; float: right;"></div>
-            <img src="{{ asset('gopilaptop.png') }}" width="550" height="4 35"
-                style="display:block; position:absolute; top:295px; left:21px">
+            <div class="col-sm-2 mb-2" style="background-color: black; height: 35vh; width: 90%; float: right;"></div>
+            <img src="{{ asset('gopilaptopmobile.png') }}"
+                style="display:block; position:absolute; top:275px; left:21px">
         </section>
         <section class="iphone-mid">
-            <div class="col-sm-2" style="background-color: black; height: 53vh; width: 90%; float: right;"></div>
-            <img src="{{ asset('gopilaptop.png') }}" width="350" height="235"
-                style="display:block; position:absolute; top:295px; left:21px">
+            <div class="col-sm-2 mb-2" style="background-color: black; height: 35vh; width: 90%; float: right;"></div>
+            <img src="{{ asset('gopilaptopmobile.png') }}"
+                style="display:block; position:absolute; top:275px; left:21px">
         </section>
         <section class="iphone-semi-mid">
-            <div class="col-sm-2" style="background-color: black; height: 58vh; width: 90%; float: right;"></div>
-            <img src="{{ asset('gopilaptop.png') }}" width="350" height="235"
-                style="display:block; position:absolute; top:295px; left:21px">
+            <div class="col-sm-2 mb-2" style="background-color: black; height: 35vh; width: 90%; float: right;"></div>
+            <img src="{{ asset('gopilaptopmobile.png') }}"
+                style="display:block; position:absolute; top:275px; left:21px">
         </section>
         <section class="iphone-mini">
-            <div class="col-sm-2" style="background-color: black; height: 15vh; width: 90%; float: right;"></div>
-            <img src="{{ asset('gopilaptop.png') }}" width="350" height="235"
+            <div class="col-sm-2 mb-2" style="background-color: black; height: 15vh; width: 90%; float: right;"></div>
+            <img src="{{ asset('gopilaptopmobile.png') }}"
                 style="display:block; position:absolute; top:295px; left:21px">
         </section>
             <div class="col-lg-8 mt-5">
                 <div class="col-md-6">
                     <h1 style="color: black; font-size:30px"><strong>About Us</strong></h1>
-                    <p style="color: black">PT Global Pristiya Group is a company that continues to grow and develop for
+                    <p style="color: black; font-size:13px">PT Global Pristiya Group is a company that continues to grow and develop for
                         the
                         better in Indonesia with main businesses engaged in the digital innovation sector, Digital Marketing
                         and Strategy, Property Construction, Food and Beverages, Pre-seed Venture, Gadgets and Wearables, by
                         building a business strong in the consumer market such as: <strong>Goodeva Technology, Anywell,
                             Digideva,
                             Gagoo, Odevaa, and SiTukang.com.</strong></p>
-                    <p style="color: black">
+                    <p style="color: black;font-size:13px">
                         We strive to develop new business lines that focus on consumer needs. It all starts with
                         continuing
                         to innovate and develop in a better direction.</p>
@@ -427,7 +426,7 @@
         <div class="col-lg-12">
             <div class="row">
                 <div class="col-4">
-                    <h1 style="color: black; font-size:36px">Vision</h1>
+                    <h1 style="color: black; font-size:26px; font-weight:bold">Vision</h1>
                 </div>
                 <div class="col-8">
                     <p style="color: black">To be the best business ecosystem in Indonesia and always provide the best for consumer
@@ -436,7 +435,7 @@
             </div>
             <div class="row">
                 <div class="col-4">
-                    <h1 style="color: black; font-size:36px">Mission</h1>
+                    <h1 style="color: black; font-size:26px; font-weight:bold">Mission</h1>
                 </div>
                 <div class="col-8">
                     <p style="color: black">Continue to strive to further develop and grow together by building strong relationships
@@ -498,7 +497,7 @@
         </div>
         <div class="container text-center justify-content-center">
             <div class="col-md-12">
-                <img src="{{ asset('dooleydummy.png') }}" alt="">
+                <img src="{{ asset('dooleydummy.png') }}" alt="" class="mb-2">
                 <center>
                     <h1 style="color: black; font-size:24px; font-weight:bold">Agustinus Putra</h1>
                 </center>
@@ -507,7 +506,7 @@
                 </center>
             </div>
             <div class="col-md-12">
-                <img src="{{ asset('dooleydummy.png') }}" alt="">
+                <img src="{{ asset('dooleydummy.png') }}" alt="" class="mb-2">
                 <center>
                     <h1 style="color: black; font-size:24px; font-weight:bold">Agustinus Putra</h1>
                 </center>
@@ -516,7 +515,7 @@
                 </center>
             </div>
             <div class="col-md-12">
-                <img src="{{ asset('dooleydummy.png') }}" alt="">
+                <img src="{{ asset('dooleydummy.png') }}" alt="" class="mb-2">
                 <center>
                     <h1 style="color: black; font-size:24px; font-weight:bold">Agustinus Putra</h1>
                 </center>

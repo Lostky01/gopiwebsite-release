@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmailController;
+use App\Http\Controllers\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,3 +34,6 @@ Route::get('/home', function () {
 
 Route::get('/contact', [EmailController::class, 'index'])->name('contact');
 Route::post('/send-email', [EmailController::class, 'sendEmail'])->name('send.email');
+Route::get('/admin', [AdminController::class, 'index'])->name('admin');
+Route::get('/download-pdf', [AdminController::class, 'downloadPdf'])->name('download-pdf');
+Route::get('/export-excel', [AdminController::class, 'exportToExcel'])->name('export-excel');

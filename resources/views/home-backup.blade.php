@@ -188,17 +188,6 @@
             text-align: center;
             font-size: 18px;
         }
-        .image-text-mobile h1 {
-            position: absolute;
-            bottom: 10px;
-
-            left: 50%;
-            transform: translateX(-50%);
-            color: white;
-            border-radius: 5px;
-            text-align: center;
-            font-size: 14px;
-        }
 
         .background-imageoffice {
             width: 100%;
@@ -638,23 +627,23 @@
             </div>
         </div>
         <section class="ordinary-phone">
-            <div class="col-sm-2 mb-2" style="background-color: black; height: 35vh; width: 90%; float: right;"></div>
+            <div class="col-sm-2" style="background-color: black; height: 35vh; width: 90%; float: right;"></div>
             <img src="{{ asset('peoplemobile.png') }}" height="175"
                 style="display:block; position:absolute; top:273px; left:21px">
         </section>
         <section class="iphone-mini">
-            <div class="col-sm-2 mb-2" style="background-color: black; height: 35vh; width: 90%; float: right;"></div>
+            <div class="col-sm-2" style="background-color: black; height: 35vh; width: 90%; float: right;"></div>
             <img src="{{ asset('peoplemobile.png') }}" height="175"
                 style="display:block; position:absolute; top:273px; left:21px">
         </section>
-        <div class="col-lg-6" style="margin-top:%">
-            <div class="col-md-5">
+        <div class="col-lg-6 mt-5">
+            <div class="col-md-5 mt-5">
                 <h1 style="color: black; font-size:24px"><strong>Overview</strong></h1>
-                <p style="color: black; font-size:13px">Our journey started in 2018 as the newest digital catalyst within the largest
+                <p style="color: black">Our journey started in 2018 as the newest digital catalyst within the largest
                     consumer-focused group in Indonesia: Global Pristya. We are here to design, build and enable digital
                     transformation within the ecosystem.</p>
                 <div class="collapse" id="collapseExample3">
-                    <div style="color: black; line-height:normal; font-size:13px">
+                    <div style="color: black; line-height:normal">
                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
                         Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
                         proident.
@@ -682,13 +671,13 @@
             <div class="row">
                 <div class="image-containerspecial-mobile col-6 col-sm-6 w-100">
                     <img src="{{ asset('gambar1.png') }}" alt="Gambar 1">
-                    <div class="image-text-mobile">
-                        <h1><strong>Property and Construction</strong></h1>
+                    <div class="image-text">
+                        <h1><strong>Property and<br> Construction</strong></h1>
                     </div>
                 </div>
                 <div class="image-containerspecial-mobile col-6 col-sm-6 w-100">
                     <img src="{{ asset('gambar2.png') }}" alt="Gambar 2">
-                    <div class="image-text-mobile">
+                    <div class="image-text">
                         <h1><strong>Technology and Inovation</strong></h1>
                     </div>
                 </div>
@@ -696,13 +685,13 @@
             <div class="row">
                 <div class="image-containerspecial-mobile col-6 col-sm-6 w-100">
                     <img src="{{ asset('gambar3.png') }}" alt="Gambar 3">
-                    <div class="image-text-mobile">
+                    <div class="image-text">
                         <h1><strong>Digital Marketing and Branding</strong></h1>
                     </div>
                 </div>
                 <div class="image-containerspecial-mobile col-6 col-sm-6 w-100">
                     <img src="{{ asset('gambar4.png') }}" alt="Gambar 4">
-                    <div class="image-text-mobile">
+                    <div class="image-text">
                         <h1><strong>Food and Beverages</strong></h1>
                     </div>
                 </div>
@@ -710,13 +699,13 @@
             <div class="row">
                 <div class="image-containerspecial-mobile col-6 col-sm-6 w-100">
                     <img src="{{ asset('gambar5.png') }}" alt="Gambar 5">
-                    <div class="image-text-mobile">
+                    <div class="image-text">
                         <h1><strong>Gadgets and Wearables</strong></h1>
                     </div>
                 </div>
                 <div class="image-containerspecial-mobile col-6 col-sm-6 w-100">
                     <img src="{{ asset('gambar6.png') }}" alt="Gambar 6">
-                    <div class="image-text-mobile">
+                    <div class="image-text">
                         <h1><strong>Pre-seed Venture</strong></h1>
                     </div>
                 </div>
@@ -729,7 +718,7 @@
         </div>
         <div class="container text-center justify-content-center">
             <div class="col-md-12">
-                <img src="{{ asset('dooleydummy.png') }}" alt="" class="mb-2">
+                <img src="{{ asset('dooleydummy.png') }}" alt="">
                 <center>
                     <h1 style="color: black; font-size:24px; font-weight:bold">Agustinus Putra</h1>
                 </center>
@@ -738,7 +727,7 @@
                 </center>
             </div>
             <div class="col-md-12">
-                <img src="{{ asset('dooleydummy.png') }}" alt="" class="mb-2">
+                <img src="{{ asset('dooleydummy.png') }}" alt="">
                 <center>
                     <h1 style="color: black; font-size:24px; font-weight:bold">Agustinus Putra</h1>
                 </center>
@@ -747,7 +736,7 @@
                 </center>
             </div>
             <div class="col-md-12">
-                <img src="{{ asset('dooleydummy.png') }}" alt="" class="mb-2">
+                <img src="{{ asset('dooleydummy.png') }}" alt="">
                 <center>
                     <h1 style="color: black; font-size:24px; font-weight:bold">Agustinus Putra</h1>
                 </center>
@@ -760,14 +749,14 @@
             <div class="image-container" style="position: relative;">
                 <div class="background-imageoffice-mobile">
                     <div class="left"
-                        style="position: absolute; top: 89px; left: -10px; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 20px; border-radius: 3px;">
+                        style="position: absolute; top: 120px; left: -10px; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 20px; border-radius: 3px;">
                         <h1 class="contact" style="font-size: 30px; color: #ffffff; margin-bottom: 10px;"><strong>Create
                                 Good<br> Business With Us</strong></h1>
                         <p class="contact" style="font-size: 15px; color: #FFCE2D; padding-bottom: 50px;">Grow Together To
                             Achieve Goals! </p>
                         <a href="{{ route('contact') }}" class="contact"
                             style="font-size: 16px; color: #ffffff; background-color: rgba(30, 30, 30, 0.74); height: 7vh; display: inline-flex; align-items: center; width: 50%; padding:10px">
-                            Join with us <img src="{{ asset('panah.svg') }}" alt="Panag SVG" style="margin-left: 10%;">
+                            Join with us <img src="{{ asset('panah.svg') }}" alt="Panag SVG" style="margin-left: 40%;">
                         </a>
                     </div>
                 </div>
@@ -777,14 +766,14 @@
             <div class="image-container" style="position: relative;">
                 <div class="background-imageoffice-mobile">
                     <div class="left"
-                        style="position: absolute; top: 80px; left: -10px; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 20px; border-radius: 3px;">
+                        style="position: absolute; top: 98px; left: -10px; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 20px; border-radius: 3px;">
                         <h1 class="contact" style="font-size: 30px; color: #ffffff; margin-bottom: 10px;"><strong>Create
                                 Good<br> Business With Us</strong></h1>
                         <p class="contact" style="font-size: 15px; color: #FFCE2D; padding-bottom: 50px;">Grow Together To
                             Achieve Goals!</p>
                         <a href="{{ route('contact') }}" class="contact"
-                            style="font-size: 16px; color: #ffffff; background-color: rgba(30, 30, 30, 0.74); height: 10vh; display: inline-flex; align-items: center; width: 50%; padding:10px">
-                            Join with us <img src="{{ asset('panah.svg') }}" alt="Panag SVG" style="margin-left: 10%;">
+                            style="font-size: 16px; color: #ffffff; background-color: rgba(30, 30, 30, 0.74); height: 7vh; display: inline-flex; align-items: center; width: 50%; padding:10px">
+                            Join with us <img src="{{ asset('panah.svg') }}" alt="Panag SVG" style="margin-left: 40%;">
                         </a>
                     </div>
                 </div>

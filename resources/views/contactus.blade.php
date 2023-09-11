@@ -162,19 +162,19 @@
             </div>
             <div class="row mb-3">
                 <div class="col-md-3">
-                    <p style="color: black"><strong>Address :</strong></p>
-                    <p style="color: black">GOODEVA CBD Division, Grand Galaxy Commercial RSK 6 No. 15, Kota Bekasi</p>
+                    <p style="color: black; font-size:24px"><strong>Address :</strong></p>
+                    <p style="color: black; font-size:16px">GOODEVA CBD Division, Grand Galaxy Commercial RSK 6 No. 15, Kota Bekasi</p>
 
-                    <p style="color: black"><strong>Email :</strong></p>
-                    <p style="color: black">globalpristiya@gopi.com</p>
+                    <p style="color: black; font-size:24px"><strong>Email :</strong></p>
+                    <p style="color: black; font-size:16px">globalpristiya@gopi.com</p>
 
                     <p style="color: black"><strong>Follow Us</strong></p>
-                    <a href=""><i class="fa fa-youtube-play" style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
-                    <a href=""><i class="fa fa-twitter" style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
-                    <a href="https://www.instagram.com/goodeva.id/?hl=id"><i class="fa fa-instagram"
-                            style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
-                    <a href="https://www.facebook.com/globalpristya"><i class="fa fa-facebook-square"
-                            style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
+                    <a href=""><i class="fa fa-youtube-play mr-2" style="font-size:40px; color:rgb(0, 0, 0)"> </i></a>
+                    <a href=""><i class="fa fa-twitter mx-2" style="font-size:40px; color:rgb(0, 0, 0)"> </i></a>
+                    <a href="https://www.instagram.com/goodeva.id/?hl=id"><i class="fa fa-instagram mx-2"
+                            style="font-size:40px; color:rgb(0, 0, 0)"> </i></a>
+                    <a href="https://www.facebook.com/globalpristya"><i class="fa fa-facebook-square mx-2"
+                            style="font-size:40px; color:rgb(0, 0, 0)"> </i></a>
                 </div>
                 <div class="col-lg-8">
                     <form method="post" action="{{ route('send.email') }}">
@@ -253,7 +253,7 @@
                 </div>
                 <input type="hidden" name="send_email" value="1">
             </form>
-            <div class="col-md-3">
+            <div class="col-md-3 mb-3">
                 <p style="color: black"><strong>Address :</strong></p>
                 <p style="color: black; white-space:pre-line">GOODEVA CBD Division,
                      Grand Galaxy
@@ -263,10 +263,10 @@
                 <p style="color: black">globalpristiya@gopi.com</p>
 
                 <p style="color: black"><strong>Follow Us</strong></p>
-                <a href=""><i class="fa fa-youtube-play" style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
-                <a href=""><i class="fa fa-twitter" style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
-                <a href="https://www.instagram.com/goodeva.id/?hl=id"><i class="fa fa-instagram" style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
-                <a href="https://www.facebook.com/globalpristya"><i class="fa fa-facebook-square" style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
+                <a href=""><i class="fa fa-youtube-play mr-2" style="font-size:26px; color:rgb(0, 0, 0)"> </i></a>
+                <a href=""><i class="fa fa-twitter mx-2" style="font-size:26px; color:rgb(0, 0, 0)"> </i></a>
+                <a href="https://www.instagram.com/goodeva.id/?hl=id"><i class="fa fa-instagram mx-2" style="font-size:26px; color:rgb(0, 0, 0)"> </i></a>
+                <a href="https://www.facebook.com/globalpristya"><i class="fa fa-facebook-square mx-2" style="font-size:26px; color:rgb(0, 0, 0)"> </i></a>
             </div>
         </div>
     </section>

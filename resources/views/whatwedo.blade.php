@@ -50,27 +50,27 @@
             padding: 0;
         }
 
-        .image-text {
+        .image-text h1 {
             position: absolute;
             bottom: 10px;
-
-            left: 38%;
+            left: 35%;
             transform: translateX(-50%);
             color: white;
             border-radius: 5px;
-            font-size: 12px;
+            font-size: 26px;
         }
 
-        /* .image-text-mobile {
+        .image-text-mobile {
             position: absolute;
             bottom: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
-            border-radius: 5px;
+            border-radius: 10px;
             font-size: 10px;
-        } */
+            padding: 15px;
+        }
 
         .image-containerspecial-mobile {
             position: relative;
@@ -162,10 +162,10 @@
             <div class="col-lg-6 mt-5">
                 <h5 style="color: black; margin-left:15%"><strong><a href="{{ route('home') }}"
                             style="color: black;">Home</a>/</strong>What We Do</h5>
-                <div class="col-md-8 mt-5" style="margin-left: 25%">
+                <div class="col-md-8 mt-5" style="margin-left: 13%">
                     <h1 style="color: black; font-size:50px"><strong>What We Do</strong></h1>
-                    <p style="color: black;font-size:20px;">Increasing consumer demand and expectations have driven us to continue to
-                        develop and innovate in creating a business sector that can always meet the needs of consumers</p>
+                    <p style="color: black;font-size:24px;">Increasing consumer demand <br> and expectations have driven us to continue to
+                        develop and innovate in creating a <br> business sector that can always meet the needs of consumers</p>
                 </div>
             </div>
             <div class="col-lg-6" style="background-color: black; height: 50vh;">
@@ -184,7 +184,7 @@
                     <div class="image-containerspecial">
                         <img src="{{ asset('gambar1.png') }}" alt="Gambar 1">
                         <div class="image-text text-left"> <!-- Ini yang nambahin class text-left biar teksnya ke kiri -->
-                            <h1><strong>Property and<br>Construction</strong></h1>
+                            <h1><strong>Property and Construction</strong></h1>
                         </div>
                     </div>
                 </div>
@@ -276,24 +276,24 @@
             </div>
         </div>
         <section class="android-image">
-            <div class="col-sm-2 mb-5" style="background-color: black; height: 38vh; width: 90%; float: right;"></div>
+            <div class="col-sm-2 mb-2" style="background-color: black; height: 35vh; width: 90%; float: right;"></div>
             <img src="{{ asset('gopioffice.png') }}" width="550" height="435"
-                style="display:block; position:absolute; top:324px; left:21px">
+                style="display:block; position:absolute; top:298px; left:21px">
         </section>
         <section class="iphone-image">
-            <div class="col-sm-2 mb-5" style="background-color: black; height: 35vh; width: 90%; float: right;"></div>
+            <div class="col-sm-2 mb-2" style="background-color: black; height: 35vh; width: 90%; float: right;"></div>
             <img src="{{ asset('gopioffice.png') }}" width="350" height="235"
                 style="display:block; position:absolute; top:303px; left:21px">
         </section>
         <section class="iphone-image-mini">
-            <div class="col-sm-2 mb-5" style="background-color: black; height: 50vh; width: 90%; float: right;"></div>
+            <div class="col-sm-2 mb-2" style="background-color: black; height: 50vh; width: 90%; float: right;"></div>
             <img src="{{ asset('gopioffice.png') }}" width="350" height="235"
                 style="display:block; position:absolute; top:304px; left:21px">
         </section>
-        <div class="col-lg-6" style="margin-top: 5%">
-            <div class="col-md-5 mt-2">
+        <div class="col-lg-6">
+            <div class="col-md-5">
                 <h1 style="color: black; font-size:24px"><strong>What We Do</strong></h1>
-                <p style="color: black; line-height:normal">Increasing consumer demand and expectations have driven us to continue to
+                <p style="color: black; line-height:normal; font-size:14px">Increasing consumer demand and expectations have driven us to continue to
                     develop and innovate in creating a business sector that can always meet the needs of consumers</p>
             </div>
         </div>
@@ -306,13 +306,13 @@
         <div class="row">
             <div class="image-containerspecial-mobile col-6 col-sm-6 w-100">
                 <img src="{{ asset('gambar1.png') }}" alt="Gambar 1">
-                <div class="image-text">
+                <div class="image-text-mobile text-center">
                     <h1><strong>Property and<br> Construction</strong></h1>
                 </div>
             </div>
             <div class="image-containerspecial-mobile col-6 col-sm-6 w-100">
                 <img src="{{ asset('gambar2.png') }}" alt="Gambar 2">
-                <div class="image-text">
+                <div class="image-text-mobile text-center">
                     <h1><strong>Technology and Inovation</strong></h1>
                 </div>
             </div>
@@ -320,13 +320,13 @@
         <div class="row">
             <div class="image-containerspecial-mobile col-6 col-sm-6 w-100">
                 <img src="{{ asset('gambar3.png') }}" alt="Gambar 3">
-                <div class="image-text">
+                <div class="image-text-mobile text-center">
                     <h1><strong>Digital Marketing and Branding</strong></h1>
                 </div>
             </div>
             <div class="image-containerspecial-mobile col-6 col-sm-6 w-100">
                 <img src="{{ asset('gambar4.png') }}" alt="Gambar 4">
-                <div class="image-text">
+                <div class="image-text-mobile text-center">
                     <h1><strong>Food and Beverages</strong></h1>
                 </div>
             </div>
@@ -334,13 +334,13 @@
         <div class="row">
             <div class="image-containerspecial-mobile col-6 col-sm-6 w-100">
                 <img src="{{ asset('gambar5.png') }}" alt="Gambar 5">
-                <div class="image-text">
+                <div class="image-text-mobile text-center">
                     <h1><strong>Gadgets and Wearables</strong></h1>
                 </div>
             </div>
             <div class="image-containerspecial-mobile col-6 col-sm-6 w-100">
                 <img src="{{ asset('gambar6.png') }}" alt="Gambar 6">
-                <div class="image-text">
+                <div class="image-text-mobile text-center">
                     <h1><strong>Pre-seed Venture</strong></h1>
                 </div>
             </div>
