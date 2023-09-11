@@ -11,7 +11,7 @@ class Data extends Model
 
     protected $table = 'dataemail';
     protected $fillable = [
-        'name','email','phone','message'
+        'name','email','phone','message','created_at','updated_at'
     ];
 
 }

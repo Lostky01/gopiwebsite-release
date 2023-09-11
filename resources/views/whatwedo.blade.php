@@ -54,14 +54,23 @@
             position: absolute;
             bottom: 10px;
 
-            left: 50%;
+            left: 38%;
             transform: translateX(-50%);
             color: white;
-            padding: 10px;
             border-radius: 5px;
-            text-align: center;
-            font-size: 18px;
+            font-size: 12px;
         }
+
+        /* .image-text-mobile {
+            position: absolute;
+            bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 5px;
+            font-size: 10px;
+        } */
 
         .image-containerspecial-mobile {
             position: relative;
@@ -131,6 +140,10 @@
                 display: none;
             }
         }
+
+        .text-left {
+            text-align: left !important;
+        }
     </style>
 @endsection
 @section('content')
@@ -140,7 +153,7 @@
             <div class="centered"
                 style="display: flex; justify-content: center; align-items: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
                 <h2 class="contact"
-                    style="font-size: 36px; color: #ffffff; /* background-color: rgba(0, 0, 0, 0.7); */ padding: 20px; border-radius: 5px;">
+                    style="font-size: 50px; color: #ffffff; /* background-color: rgba(0, 0, 0, 0.7); */ padding: 20px; border-radius: 5px;">
                     <strong>What We Do</strong>
                 </h2>
             </div>
@@ -149,22 +162,10 @@
             <div class="col-lg-6 mt-5">
                 <h5 style="color: black; margin-left:15%"><strong><a href="{{ route('home') }}"
                             style="color: black;">Home</a>/</strong>What We Do</h5>
-                <div class="col-md-5 mt-5" style="margin-left: 40%">
-                    <h1 style="color: black"><strong>What We Do</strong></h1>
-                    <p style="color: black">Increasing consumer demand and expectations have driven us to continue to
+                <div class="col-md-8 mt-5" style="margin-left: 25%">
+                    <h1 style="color: black; font-size:50px"><strong>What We Do</strong></h1>
+                    <p style="color: black;font-size:20px;">Increasing consumer demand and expectations have driven us to continue to
                         develop and innovate in creating a business sector that can always meet the needs of consumers</p>
-                    <div class="collapse" id="collapseExample2">
-                        <div>
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                            proident.
-                        </div>
-                    </div>
-                    <div class="button-container">
-                        <a href="#collapseExample2" class="btn btn-primary" id="collapseButton"
-                            style="height:20%; background-color: #000000; border-radius: 0 !important;"
-                            data-toggle="collapse" data-target="#collapseExample2">Read More</a>
-                    </div>
                 </div>
             </div>
             <div class="col-lg-6" style="background-color: black; height: 50vh;">
@@ -182,7 +183,7 @@
                 <div class="col-md-4">
                     <div class="image-containerspecial">
                         <img src="{{ asset('gambar1.png') }}" alt="Gambar 1">
-                        <div class="image-text">
+                        <div class="image-text text-left"> <!-- Ini yang nambahin class text-left biar teksnya ke kiri -->
                             <h1><strong>Property and<br>Construction</strong></h1>
                         </div>
                     </div>
@@ -190,7 +191,7 @@
                 <div class="col-md-4">
                     <div class="image-containerspecial">
                         <img src="{{ asset('gambar2.png') }}" alt="Gambar 2">
-                        <div class="image-text">
+                        <div class="image-text text-left"> <!-- Ini yang nambahin class text-left biar teksnya ke kiri -->
                             <h1><strong>Technology and Inovation</strong></h1>
                         </div>
                     </div>
@@ -198,7 +199,7 @@
                 <div class="col-md-4">
                     <div class="image-containerspecial">
                         <img src="{{ asset('gambar3.png') }}" alt="Gambar 3">
-                        <div class="image-text">
+                        <div class="image-text text-left"> <!-- Ini yang nambahin class text-left biar teksnya ke kiri -->
                             <h1><strong>Digital Marketing and Branding</strong></h1>
                         </div>
                     </div>
@@ -208,7 +209,7 @@
                 <div class="col-md-4 mt-4">
                     <div class="image-containerspecial">
                         <img src="{{ asset('gambar4.png') }}" alt="Gambar 4">
-                        <div class="image-text">
+                        <div class="image-text text-left"> <!-- Ini yang nambahin class text-left biar teksnya ke kiri -->
                             <h1><strong>Food and Beverages</strong></h1>
                         </div>
                     </div>
@@ -216,7 +217,7 @@
                 <div class="col-md-4 mt-4">
                     <div class="image-containerspecial">
                         <img src="{{ asset('gambar5.png') }}" alt="Gambar 5">
-                        <div class="image-text">
+                        <div class="image-text text-left"> <!-- Ini yang nambahin class text-left biar teksnya ke kiri -->
                             <h1><strong>Gadgets and Wearables</strong></h1>
                         </div>
                     </div>
@@ -224,13 +225,13 @@
                 <div class="col-md-4 mt-4">
                     <div class="image-containerspecial">
                         <img src="{{ asset('gambar6.png') }}" alt="Gambar 6">
-                        <div class="image-text">
+                        <div class="image-text text-left"> <!-- Ini yang nambahin class text-left biar teksnya ke kiri -->
                             <h1><strong>Pre-seed Venture</strong></h1>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
         <div class="col-lg-12" style="background-color: #1E1E1E; padding-bottom: 50px; padding-top:10px">
             <div class="col-sm-12 mt-5">
                 <h1 style="color: white"><strong>
@@ -249,7 +250,7 @@
                         <a href="https://www.gagoo.id/"><img src="{{ asset('service3.png') }}"></a>
                     </div>
                 </div>
-                <div class="row mt-5">
+                <div class="row mt-4">
                     <div class="col-md-4">
                         <a href="https://digideva.id/"><img src="{{ asset('service4.png') }}"></a>
                     </div>
@@ -275,48 +276,31 @@
             </div>
         </div>
         <section class="android-image">
-            <div class="col-sm-2" style="background-color: black; height: 38vh; width: 90%; float: right;"></div>
-            <img src="{{ asset('gopioffice.png') }}" width="350" height="235"
-                style="display:block; position:absolute; top:304px; left:21px">
+            <div class="col-sm-2 mb-5" style="background-color: black; height: 38vh; width: 90%; float: right;"></div>
+            <img src="{{ asset('gopioffice.png') }}" width="550" height="435"
+                style="display:block; position:absolute; top:324px; left:21px">
         </section>
         <section class="iphone-image">
-            <div class="col-sm-2" style="background-color: black; height: 35vh; width: 90%; float: right;"></div>
+            <div class="col-sm-2 mb-5" style="background-color: black; height: 35vh; width: 90%; float: right;"></div>
             <img src="{{ asset('gopioffice.png') }}" width="350" height="235"
                 style="display:block; position:absolute; top:303px; left:21px">
         </section>
         <section class="iphone-image-mini">
-            <div class="col-sm-2" style="background-color: black; height: 50vh; width: 90%; float: right;"></div>
+            <div class="col-sm-2 mb-5" style="background-color: black; height: 50vh; width: 90%; float: right;"></div>
             <img src="{{ asset('gopioffice.png') }}" width="350" height="235"
                 style="display:block; position:absolute; top:304px; left:21px">
         </section>
-        <div class="col-sm-12 mt-5">
-            <h5 style="color: black;"><strong><a href="{{ route('home') }}" style="color: black;">Home</a>/</strong>What
-                We
-                Do</h5>
-        </div>
-        <div class="col-lg-6 mt-5">
-            <div class="col-md-5 mt-5">
-                <h1 style="color: black"><strong>What We Do</strong></h1>
-                <p style="color: black">Increasing consumer demand and expectations have driven us to continue to
+        <div class="col-lg-6" style="margin-top: 5%">
+            <div class="col-md-5 mt-2">
+                <h1 style="color: black; font-size:24px"><strong>What We Do</strong></h1>
+                <p style="color: black; line-height:normal">Increasing consumer demand and expectations have driven us to continue to
                     develop and innovate in creating a business sector that can always meet the needs of consumers</p>
-                <div class="collapse" id="collapseExample3">
-                    <div>
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                        proident.
-                    </div>
-                </div>
-                <div class="button-container">
-                    <a href="#collapseExample3" class="btn btn-primary"
-                        style="height:20%; background-color: #000000; border-radius: 0 !important;" data-toggle="collapse"
-                        data-target="#collapseExample3" id="collapseButton">Read More</a>
-                </div>
             </div>
         </div>
 
-        <div class="col-sm-12 mt-5 mb-5">
+        <div class="col-sm-12 mt-2 mb-5">
             <center>
-                <h1 style="color: black"><strong>Business Unit</strong></h1>
+                <h1 style="color: black; font-size:24px"><strong>Business Unit</strong></h1>
             </center>
         </div>
         <div class="row">

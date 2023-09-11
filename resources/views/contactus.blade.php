@@ -28,7 +28,7 @@
         .input-container {
             position: relative !important;
             margin: 50px auto !important;
-            width: 550px !important;
+            width: 590px !important;
         }
 
         .input-container input[type="text"] {
@@ -150,7 +150,7 @@
             </div>
         </div>
         <br>
-        <div class="container">
+        <div class="container" style="padding: 10px !important;">
             <div class="col-sm-12">
                 <h5 style="color: black"><strong>Home/</strong>Contact Us</h5>
             </div>
@@ -225,44 +225,48 @@
             <p style="color: black"><strong>Home/</strong>Contact Us</p>
             <h1 style="color: black"><strong>Join With Us !</strong></h1>
             <p style="color: black">Are you interested in joining us? We warmly welcome you to contact us here.</p>
-            <form action="#">
+            <form method="post" action="{{ route('send.email') }}">
+                @csrf
                 <div class="input-container">
-                    <input type="text" id="input" required="">
+                    <input type="text" name="name" required>
                     <label for="input" class="label">Your Name</label>
                     <div class="underline"></div>
                 </div>
                 <div class="input-container">
-                    <input type="text" id="input" required="">
-                    <label for="input" class="label">Email Address</label>
+                    <input type="text" name="email" required>
+                    <label for="input" class="label">Email</label>
                     <div class="underline"></div>
                 </div>
                 <div class="input-container">
-                    <input type="text" id="input" required="">
+                    <input type="text" name="phone" required>
                     <label for="input" class="label">Phone Number</label>
                     <div class="underline"></div>
                 </div>
                 <div class="input-container">
-                    <input type="text" id="input" required="">
+                    <input type="text" name="message" required>
                     <label for="input" class="label">Messages</label>
                     <div class="underline"></div>
                 </div>
                 <div class="input-container">
                     <button type="submit" class="btn btn-primary"
-                        style="background-color: #000000; border-radius: 0 !important; width:100%">Submit</button>
+                        style="background-color: #000000; border-radius: 0 !important;">Submit</button>
                 </div>
+                <input type="hidden" name="send_email" value="1">
             </form>
             <div class="col-md-3">
                 <p style="color: black"><strong>Address :</strong></p>
-                <p style="color: black">GOODEVA CBD Division, Grand Galaxy Commercial RSK 6 No. 15, Kota Bekasi</p>
-
+                <p style="color: black; white-space:pre-line">GOODEVA CBD Division,
+                     Grand Galaxy
+                      Commercial RSK 6 No. 15,
+                      Kota Bekasi</p>
                 <p style="color: black"><strong>Email :</strong></p>
                 <p style="color: black">globalpristiya@gopi.com</p>
 
                 <p style="color: black"><strong>Follow Us</strong></p>
                 <a href=""><i class="fa fa-youtube-play" style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
                 <a href=""><i class="fa fa-twitter" style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
-                <a href=""><i class="fa fa-instagram" style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
-                <a href=""><i class="fa fa-facebook-square" style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
+                <a href="https://www.instagram.com/goodeva.id/?hl=id"><i class="fa fa-instagram" style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
+                <a href="https://www.facebook.com/globalpristya"><i class="fa fa-facebook-square" style="font-size:36px; color:rgb(0, 0, 0)"> </i></a>
             </div>
         </div>
     </section>

@@ -43,9 +43,9 @@ $baseurl = 'https://monitoring.globaldeva.com/';
     <link rel="icon" type="image/png" sizes="16x16"
         href="{{ $baseurl }}/public/img/favicon3/favicon-16x16.png">
     <link rel="manifest" href="{{ $baseurl }}/public/img/favicon3/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileColor" content="{{ asset('gopiicon.png') }}">
     <meta name="msapplication-TileImage" content="{{ asset('gopiicon.png') }}">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="{{ asset('gopiicon.png') }}">
     <link rel="stylesheet" type="text/css" href="{{ $baseurl }}/public/css/style_timelane.css?v2?>">
     <link rel="stylesheet" href="{{ $baseurl }}/public/css/style.css?v=1.0">
     <link rel="stylesheet" href="{{ $baseurl }}/public/css/responsive.css">
@@ -834,9 +834,9 @@ $baseurl = 'https://monitoring.globaldeva.com/';
 
 </head>
 
-@php
+{{-- @php
     $role = Auth::check() ? Auth::user()->role : null;
-@endphp
+@endphp --}}
 
 <body>
     <div class="preloader" style="display: none;"></div>

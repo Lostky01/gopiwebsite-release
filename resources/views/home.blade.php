@@ -127,7 +127,7 @@
             justify-content: center;
             align-items: center;
             position: absolute;
-            top: 149px;
+            top: 98px;
             left: -694px;
             width: 100%;
             height: 100%;
@@ -191,7 +191,7 @@
 
         .background-imageoffice {
             width: 100%;
-            height: 70vh;
+            height: 50vh;
             /* Set the height of the container */
             background-image: url('{{ asset('officemockup.png') }}');
             background-size: cover;
@@ -261,7 +261,7 @@
 
 
         .custom-underline {
-            border-bottom: 3px solid #002D92;
+            border-bottom: 20px solid #002D92;
         }
 
         .android-join {
@@ -317,6 +317,9 @@
             color: rgba(255, 255, 255, 0);
             /* Warna putih dengan tingkat transparansi 50% */
         }
+        p {
+            line-height: normal;
+        }
     </style>
 @endsection
 
@@ -338,14 +341,14 @@
         </div>
         <div class="row mt-5">
             <div class="col-lg-6 mt-5">
-                <div class="col-md-5 mt-5" style="margin-left: 30%">
-                    <h1 style="color: black; font-size: 30px;"><strong>Overview</strong></h1>
-                    <p style="color: black; font-size: 20px;">Our journey started in 2018 as the newest digital catalyst
+                <div class="col-md-8 mt-5" style="margin-left: 20%; padding-top:5%">
+                    <h1 style="color: black; font-size: 50px;"><strong>Overview</strong></h1>
+                    <p style="color: black; font-size: 25px;">Our journey started in 2018 as the newest digital catalyst
                         within the largest
                         consumer-focused group in Indonesia: Global Pristya. We are here to design, build and enable digital
                         transformation within the ecosystem.</p>
                     <div class="collapse" id="collapseExample2">
-                        <div> <p style="color: black; font-size: 20px;">
+                        <div> <p style="color: black; font-size: 25px;">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
                             Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
                             proident.
@@ -358,18 +361,18 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6" style="background-color: black; height: 55vh;">
+            <div class="col-lg-6" style="background-color: black; height: 70vh;">
                 <!-- Isi konten dari col-lg-6 -->
             </div>
-            <img src="{{ asset('people.png') }}" width="653" height="400" class="imgpeopledesktop"
+            <img src="{{ asset('people.png') }}" width="853" height="600" class="imgpeopledesktop"
                 style="position: absolute; left: 883px; top:867px; display:block">
         </div>
-        <div class="container" style="max-width: 1500px; padding-top:10%">
-            <h1 style="color: black; text-align: center;"><strong>Business Strategy</strong></h1>
+        <h1 style="color: black; text-align: center; font-size:80px; margin-top:50px"><strong>Business Strategy</strong></h1>
+        <div class="container mb-5" style="max-width: 1500px; padding-top:5%">
             <div class="row">
-                <div class="col-sm-6 mx-auto mt-5">
+                <div class="col-sm-6 mx-auto">
                     <center>
-                        <h3 style="color: black; border-bottom: 2px solid #002D92;">Customers</h3>
+                        <h3 style="color: black; border-bottom: 5px solid #002D92;">Customers</h3>
                     </center>
                 </div>
             </div>
@@ -379,45 +382,45 @@
             </div>
             <div class="col-sm-10 mx-auto mt-5">
                 <center>
-                    <h3 style="color: black; border-bottom: 2px solid #002D92;">Omnichannel</h3>
+                    <h3 style="color: black; border-bottom: 5px solid #002D92;">Omnichannel</h3>
                 </center>
             </div>
             <div class="row mt-5 mx-auto d-flex justify-content-center">
                 <div class="col-sm-2">
                     <center>
-                        <h3 style="color: black; border-bottom: 2px solid #002D92;">Offline B2C</h3>
+                        <h3 style="color: black; border-bottom: 5px solid #002D92;">Offline B2C</h3>
                     </center>
                 </div>
                 <div class="col-sm-2">
                     <center>
-                        <h3 style="color: black; border-bottom: 2px solid #002D92;">Online B2C</h3>
+                        <h3 style="color: black; border-bottom: 5px solid #002D92;">Online B2C</h3>
                     </center>
                 </div>
                 <div class="col-sm-2">
                     <center>
-                        <h3 style="color: black; border-bottom: 2px solid #002D92;">Offline B2B</h3>
+                        <h3 style="color: black; border-bottom: 5px solid #002D92;">Offline B2B</h3>
                     </center>
                 </div>
                 <div class="col-sm-2">
                     <center>
-                        <h3 style="color: black; border-bottom: 2px solid #002D92;">Online B2B</h3>
+                        <h3 style="color: black; border-bottom: 5px solid #002D92;">Online B2B</h3>
                     </center>
                 </div>
                 <div class="col-sm-2">
                     <center>
-                        <h3 style="color: black; border-bottom: 2px solid #002D92;">B2B2C</h3>
+                        <h3 style="color: black; border-bottom: 5px solid #002D92;">B2B2C</h3>
                     </center>
                 </div>
             </div>
             <div class="row mt-5 mx-auto d-flex justify-content-center">
                 <div class="col-sm-5">
                     <center>
-                        <h3 style="color: black; border-bottom: 2px solid #002D92;">CRM And Loyalty</h3>
+                        <h3 style="color: black; border-bottom: 5px solid #002D92;">CRM And Loyalty</h3>
                     </center>
                 </div>
                 <div class="col-sm-5">
                     <center>
-                        <h3 style="color: black; border-bottom: 2px solid #002D92;">Digital And Offline Marketing</h3>
+                        <h3 style="color: black; border-bottom: 5px solid #002D92;">Digital And Offline Marketing</h3>
                     </center>
                 </div>
             </div>
@@ -456,18 +459,18 @@
             </div>
             <div class="col-sm-10 mx-auto mt-5">
                 <center>
-                    <h3 style="color: black; border-bottom: 2px solid #002D92;">Human Capital Management</h3>
+                    <h3 style="color: black; border-bottom: 5px solid #002D92;">Human Capital Management</h3>
                 </center>
             </div>
             <div class="col-sm-10 mx-auto mt-5">
                 <center>
-                    <h3 style="color: black; border-bottom: 2px solid #002D92;">Financial Management</h3>
+                    <h3 style="color: black; border-bottom: 5px solid #002D92;">Financial Management</h3>
                 </center>
             </div>
         </div>
         <div class="col-sm-12 mt-5 mb-5">
             <center>
-                <h1 style="color: black"><strong>Business Sector</strong></h1>
+                <h1 style="color: black; font-size:80px"><strong>Business Sector</strong></h1>
             </center>
         </div>
         <div class="row">
@@ -512,7 +515,7 @@
         </div>
         <div class="col-sm-12 mt-5 mb-5">
             <center>
-                <h1 style="color: black"><strong>Organization Structure</strong></h1>
+                <h1 style="color: black; font-size:60px"><strong>Organization Structure</strong></h1>
             </center>
         </div>
         <div class="container">
@@ -591,22 +594,21 @@
                     <img src="{{ asset('slidekanan.png') }}" alt="Next">
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
         </div>
         <div class="image-container" id="Join" style="position: relative;">
             <div class="background-imageoffice">
                 <div class="left desc">
                     <h1 class="contact"
-                        style="font-size: 50px; color: #ffffff; /* background-color: rgba(0, 0, 0, 0.7); */ padding: 20px; border-radius: 5px;">
+                        style="font-size: 50px; color: #ffffff; /* background-color: rgba(0, 0, 0, 0.7); */">
                         <strong>Create Good <br> Business With Us</strong>
                     </h1>
                     <p class="contact"
-                        style="font-size: 24px; color: #FFCE2D; /* background-color: rgba(0, 0, 0, 0.7); */ padding: 20px; padding-bottom: 10px; border-radius: 5px;">
+                        style="font-size: 26px; color: #FFCE2D; /* background-color: rgba(0, 0, 0, 0.7); */ ">
                         Grow Together To Achieve Goals!
                     </p>
                     <a href="{{ route('contact') }}" class="contact mt-5"
-                        style="font-size: 24px; color: #ffffff; background-color:rgba(30, 30, 30, 0.74) ; padding: 20px; border-radius: 0px !important; width: 300px;">
-                        Join with us <img src="{{ asset('panah.svg') }}" alt="Panag SVG" style="padding-left:36% ">
+                        style="font-size: 24px; color: #ffffff; background-color:rgba(30, 30, 30, 0.74) ; padding: 20px; border-radius: 0px !important; width: 450px; left:10px padding-left:10%">
+                        Join with us <img src="{{ asset('panah.svg') }}" alt="Panag SVG" style="padding-left:60% ">
                     </a>
                 </div>
             </div>
@@ -625,23 +627,23 @@
             </div>
         </div>
         <section class="ordinary-phone">
-            <div class="col-sm-2" style="background-color: black; height: 42vh; width: 90%; float: right;"></div>
+            <div class="col-sm-2" style="background-color: black; height: 35vh; width: 90%; float: right;"></div>
             <img src="{{ asset('peoplemobile.png') }}" height="175"
                 style="display:block; position:absolute; top:273px; left:21px">
         </section>
         <section class="iphone-mini">
-            <div class="col-sm-2" style="background-color: black; height: 48vh; width: 90%; float: right;"></div>
+            <div class="col-sm-2" style="background-color: black; height: 35vh; width: 90%; float: right;"></div>
             <img src="{{ asset('peoplemobile.png') }}" height="175"
                 style="display:block; position:absolute; top:273px; left:21px">
         </section>
         <div class="col-lg-6 mt-5">
             <div class="col-md-5 mt-5">
-                <h1 style="color: black"><strong>Overview</strong></h1>
+                <h1 style="color: black; font-size:24px"><strong>Overview</strong></h1>
                 <p style="color: black">Our journey started in 2018 as the newest digital catalyst within the largest
                     consumer-focused group in Indonesia: Global Pristya. We are here to design, build and enable digital
                     transformation within the ecosystem.</p>
                 <div class="collapse" id="collapseExample3">
-                    <div>
+                    <div style="color: black; line-height:normal">
                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
                         Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
                         proident.
@@ -655,14 +657,14 @@
             </div>
         </div>
         <div class="container mt-5" style="max-width: 1500px;">
-            <h1 style="color: black; text-align: center;"><strong>Business Strategy</strong></h1>
+            <h1 style="color: black; text-align: center;font-size:24px"><strong>Business Strategy</strong></h1>
             <div class="image-strategy" style="text-align: center;">
                 <img src="{{ asset('strategy.png') }}" width="1400" height="890" style="max-width: 100%;">
             </div>
         </div>
         <div class="col-sm-12 mt-5 mb-5">
             <center>
-                <h1 style="color: black"><strong>Business Unit</strong></h1>
+                <h1 style="color: black; font-size:24px"><strong>Business Unit</strong></h1>
             </center>
         </div>
         <section class="android">
@@ -711,91 +713,50 @@
         </section>
         <div class="col-sm-12 mt-5 mb-5">
             <center>
-                <h1 style="color: black"><strong>Organization Structure</strong></h1>
+                <h1 style="color: black; font-size:24px"><strong>Organization Structure</strong></h1>
             </center>
         </div>
-        <div class="container">
-            <div class="swiper-container two">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="slider-image">
-                            <img src="{{ asset('dooleydummy.png') }}" alt="slide 1">
-                        </div>
-                        <div class="slider-description-mobile">
-                            <h3><strong>Agustinus Putra</strong></h3>
-                            <p>Goodeva Technology CEO</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slider-image">
-                            <img src="{{ asset('dooleydummy.png') }}" alt="slide 2">
-                        </div>
-                        <div class="slider-description-mobile">
-                            <h3><strong>Agustinus Putra</strong></h3>
-                            <p>Goodeva Technology CEO</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slider-image">
-                            <img src="{{ asset('dooleydummy.png') }}" alt="slide 3">
-                        </div>
-                        <div class="slider-description-mobile">
-                            <h3><strong>Agustinus Putra</strong></h3>
-                            <p>Goodeva Technology CEO</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slider-image">
-                            <img src="{{ asset('dooleydummy.png') }}" alt="slide 3">
-                        </div>
-                        <div class="slider-description-mobile">
-                            <h3><strong>Agustinus Putra</strong></h3>
-                            <p>Goodeva Technology CEO</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slider-image">
-                            <img src="{{ asset('dooleydummy.png') }}" alt="slide 3">
-                        </div>
-                        <div class="slider-description-mobile">
-                            <h3><strong>Agustinus Putra</strong></h3>
-                            <p>Goodeva Technology CEO</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slider-image">
-                            <img src="{{ asset('dooleydummy.png') }}" alt="slide 3">
-                        </div>
-                        <div class="slider-description-mobile">
-                            <h3><strong>Agustinus Putra</strong></h3>
-                            <p>Goodeva Technology CEO</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slider-image">
-                            <img src="{{ asset('dooleydummy.png') }}" alt="slide 3">
-                        </div>
-                        <div class="slider-description-mobile">
-                            <h3><strong>Agustinus Putra</strong></h3>
-                            <p>Goodeva Technology CEO</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
+        <div class="container text-center justify-content-center">
+            <div class="col-md-12">
+                <img src="{{ asset('dooleydummy.png') }}" alt="">
+                <center>
+                    <h1 style="color: black; font-size:24px; font-weight:bold">Agustinus Putra</h1>
+                </center>
+                <center>
+                    <p style="color: black;">Goodeva Technology CEO</p>
+                </center>
+            </div>
+            <div class="col-md-12">
+                <img src="{{ asset('dooleydummy.png') }}" alt="">
+                <center>
+                    <h1 style="color: black; font-size:24px; font-weight:bold">Agustinus Putra</h1>
+                </center>
+                <center>
+                    <p style="color: black;">Goodeva Technology CEO</p>
+                </center>
+            </div>
+            <div class="col-md-12">
+                <img src="{{ asset('dooleydummy.png') }}" alt="">
+                <center>
+                    <h1 style="color: black; font-size:24px; font-weight:bold">Agustinus Putra</h1>
+                </center>
+                <center>
+                    <p style="color: black;">Goodeva Technology CEO</p>
+                </center>
             </div>
         </div>
         <section class="android-join">
             <div class="image-container" style="position: relative;">
                 <div class="background-imageoffice-mobile">
                     <div class="left"
-                        style="position: absolute; top: 77px; left: -10px; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 20px; border-radius: 3px;">
+                        style="position: absolute; top: 120px; left: -10px; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 20px; border-radius: 3px;">
                         <h1 class="contact" style="font-size: 30px; color: #ffffff; margin-bottom: 10px;"><strong>Create
                                 Good<br> Business With Us</strong></h1>
                         <p class="contact" style="font-size: 15px; color: #FFCE2D; padding-bottom: 50px;">Grow Together To
-                            Achieve Goals!</p>
+                            Achieve Goals! </p>
                         <a href="{{ route('contact') }}" class="contact"
                             style="font-size: 16px; color: #ffffff; background-color: rgba(30, 30, 30, 0.74); height: 7vh; display: inline-flex; align-items: center; width: 50%; padding:10px">
-                            Join with us <img src="{{ asset('panah.svg') }}" alt="Panag SVG" style="margin-left: 10px;">
+                            Join with us <img src="{{ asset('panah.svg') }}" alt="Panag SVG" style="margin-left: 40%;">
                         </a>
                     </div>
                 </div>
@@ -812,7 +773,7 @@
                             Achieve Goals!</p>
                         <a href="{{ route('contact') }}" class="contact"
                             style="font-size: 16px; color: #ffffff; background-color: rgba(30, 30, 30, 0.74); height: 7vh; display: inline-flex; align-items: center; width: 50%; padding:10px">
-                            Join with us <img src="{{ asset('panah.svg') }}" alt="Panag SVG" style="margin-left: 10px;">
+                            Join with us <img src="{{ asset('panah.svg') }}" alt="Panag SVG" style="margin-left: 40%;">
                         </a>
                     </div>
                 </div>
@@ -831,7 +792,7 @@
                             Achieve Goals!</p>
                         <a href="{{ route('contact') }}" class="contact"
                             style="font-size: 16px; color: #ffffff; background-color: rgba(30, 30, 30, 0.74); height: 7vh; display: inline-flex; align-items: center; width: 50%; padding:10px">
-                            Join with us <img src="{{ asset('panah.svg') }}" alt="Panag SVG" style="margin-left: 10px;">
+                            Join with us <img src="{{ asset('panah.svg') }}" alt="Panag SVG" style="margin-left: 20%;">
                         </a>
                     </div>
                 </div>

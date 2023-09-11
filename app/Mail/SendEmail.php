@@ -22,7 +22,7 @@ class SendEmail extends Mailable
     public function build()
     {
         return $this->from($this->data['email'])
-                    ->subject('New Contact Form Submission')
+                    ->subject('E-Mail Submission')
                     ->view('emails.send-email');
     }
 }
