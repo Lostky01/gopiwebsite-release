@@ -15,8 +15,7 @@ $baseurl = 'https://monitoring.globaldeva.com/';
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>GOPI</title>
-
+    <title>{{ request()->routeIs('home') ? 'Home | Global Pristya ID' : (request()->routeIs('about') ? 'About | Global Pristya ID' : (request()->routeIs('whatwedo') ? 'What We Do | Global Pristya ID' : 'Contact Us | Global Pristya ID')) }}</title>
     <!-- Add the FilePond CSS -->
     <!-- Add this in the <head> section of your HTML -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -843,7 +842,7 @@ $baseurl = 'https://monitoring.globaldeva.com/';
     <div class="page-wrapper">
         <header class="site-header header-one desktop-show" style="background-color: #ffffff;">
             <nav class="navbar navbar-expand-lg navbar-light header-navigation fixed-top"
-                style="background-color: #ffffff;">
+                style="background-color: #ffffff; ">
                 <div class="container clearfix"
                     style="width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; margin-left:5% !important; margin-right:0px !important;">
                     <div class="logo-box clearfix" style="display: flex !important; align-items: center !important;">
@@ -876,7 +875,7 @@ $baseurl = 'https://monitoring.globaldeva.com/';
                 <div class="right-side-box warna-logout" style="margin-left:20% !important;">
                     <form action="{{ route('contact') }}">
                         <button type="submit" class="btn btn-primary"
-                        style="{{ request()->routeIs('whatwedo') ? 'background-color: #F1343B; border-radius: 0 !important;' : 'background-color: #40A6D3; border-radius: 0 !important;' }}">Contact Us !</button>
+                        style="background-color: #F1343B; border-radius: 0 !important;">Contact Us !</button>
                     </form>
                 </div>
             </nav>
@@ -915,7 +914,7 @@ $baseurl = 'https://monitoring.globaldeva.com/';
                                 <li class="scrollToLink">
                                     <form action="{{ route('contact') }}">
                                         <button type="submit" class="btn btn-primary"
-                                        style="{{ request()->routeIs('whatwedo') ? 'background-color: #F1343B; border-radius: 0 !important; width:100%;' : 'background-color: #40A6D3; border-radius: 0 !important; width:100%;' }}">Contact Us !</button>
+                                        style="background-color: #F1343B; border-radius: 0 !important; width:100%;">Contact Us !</button>
                                     </form>
                                 </li>
                                 <li class="scrollToLink">

@@ -39,7 +39,7 @@
 
         .background-video-office {
             width: 100%;
-            height: 70vh;
+            height: 100vh;
             position: relative;
         }
 
@@ -376,7 +376,7 @@
                 <!-- Isi konten dari col-lg-6 -->
             </div>
             <img src="{{ asset('people.png') }}" width="853" height="600" class="imgpeopledesktop"
-                style="position: absolute; left: 883px; top:867px; display:block">
+                style="position: absolute; left: 883px; top:1174px; display:block">
         </div>
         <h1 style="color: black; text-align: center; font-size:80px; margin-top:50px"><strong>Business Strategy</strong></h1>
         <div class="container mb-5" style="max-width: 1500px; padding-top:5%">
@@ -464,7 +464,7 @@
             <div class="col-sm-10 mx-auto mt-5">
                 <center>
                     <h3 style="color:#000000">Supply Chain Management</h3>
-                    <h3 style="color: black; border-bottom: 2px solid #002D92;">(Regulatory Management / Import /
+                    <h3 style="color: black; border-bottom: 5px solid #002D92;">(Regulatory Management / Import /
                         Intrabution / Last Mile Management)</h3>
                 </center>
             </div>

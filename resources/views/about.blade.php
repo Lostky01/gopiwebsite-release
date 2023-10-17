@@ -221,7 +221,7 @@
             <img src="{{ asset('gopilaptop.png') }}" width="647" height="498" class="imgpeople"
                 style="position: absolute; left: 1066px; top: 799px; display:block">
         </div>
-        <div class="col-md-12 mt-5">
+        <div class="col-md-12 mt-5 mb-5">
             <h1 style="color: black; font-size:50px"><strong>
                     <center>Our Vision & Mission</center>
                 </strong></h1>
@@ -246,13 +246,13 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-12" style="background-color: #1E1E1E; padding-bottom: 50px;">
-            <div class="col-sm-12 mt-5">
+        <div class="col-lg-12" style="background-color: #1E1E1E; padding-bottom: 50px; padding-top:5px;">
+            <div class="col-sm-12 mb-2" style="margin-top: 40px">
                 <h1 style="color: white"><strong>
                         <center>Our Values</center>
                     </strong></h1>
             </div>
-            <div class="container mt-5">
+            <div class="container mt-3">
                 <div class="row justify-content-center mb-5">
                     <div class="col-md-5">
                         <div class="img-container">

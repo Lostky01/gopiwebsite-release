@@ -32,7 +32,7 @@ class AdminController extends Controller
         $data = DB::table($tableName)->get();
     
         // Membuat PDF menggunakan library PDF yang kamu gunakan
-        $pdf = PDF::loadView('pdf', compact('data')); // Sesuaikan 'pdf.pdf_template' dengan view PDF yang kamu buat
+        $pdf = PDF::loadView('pdf', compact('data')); 
     
         // Simpan PDF ke file
         $pdf->save(storage_path('app/' . $fileName));

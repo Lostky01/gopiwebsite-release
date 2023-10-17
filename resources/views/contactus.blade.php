@@ -40,7 +40,6 @@
             background-color: transparent !important;
             outline: none !important;
         }
-
         .input-container .label {
             position: absolute !important;
             top: 0 !important;
@@ -49,14 +48,12 @@
             transition: all 0.3s ease !important;
             pointer-events: none !important;
         }
-
         .input-container input[type="text"]:focus~.label,
         .input-container input[type="text"]:valid~.label {
             top: -20px !important;
             font-size: 16px !important;
             color: #333 !important;
         }
-
         .input-container .underline {
             position: absolute !important;
             bottom: 0 !important;
@@ -157,19 +154,25 @@
             <div class="col-md-12 d-flex justify-content-center align-items-center" style="height: 30vh;">
                 <div class="text-center">
                     <h1 style="color: black"><strong>Join With Us !</strong></h1>
-                    <p style="color: black">Are you interested in joining us? We warmly <br> welcome you to contact us here.</p>
+                    <p style="color: black">Are you interested in joining us? We warmly <br> welcome you to contact us here.
+                    </p>
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col-md-3">
                     <p style="color: black; font-size:24px"><strong>Address :</strong></p>
-                    <p style="color: black; font-size:16px">GOODEVA CBD Division, Grand Galaxy Commercial RSK 6 No. 15, Kota Bekasi</p>
-
+                    <p style="color: black; font-size:16px">GOODEVA CBD Division, Grand Galaxy Commercial RSK 6 No. 15, Kota
+                        Bekasi</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.9128132455508!2d106.97245837590697!3d-6.275193661430013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d091b5c7965%3A0x7d1d4484b899c83c!2sGoodeva%20Technology%20(Bekasi%20Office)!5e0!3m2!1sid!2sid!4v1696228465971!5m2!1sid!2sid"
+                        width="300" height="200"  style="border: 0 solid #000000;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <p style="color: black; font-size:24px"><strong>Email :</strong></p>
                     <p style="color: black; font-size:16px">globalpristiya@gopi.com</p>
 
                     <p style="color: black"><strong>Follow Us</strong></p>
-                    <a href=""><i class="fa fa-youtube-play mr-2" style="font-size:40px; color:rgb(0, 0, 0)"> </i></a>
+                    <a href=""><i class="fa fa-youtube-play mr-2" style="font-size:40px; color:rgb(0, 0, 0)">
+                        </i></a>
                     <a href=""><i class="fa fa-twitter mx-2" style="font-size:40px; color:rgb(0, 0, 0)"> </i></a>
                     <a href="https://www.instagram.com/goodeva.id/?hl=id"><i class="fa fa-instagram mx-2"
                             style="font-size:40px; color:rgb(0, 0, 0)"> </i></a>
@@ -256,17 +259,18 @@
             <div class="col-md-3 mb-3">
                 <p style="color: black"><strong>Address :</strong></p>
                 <p style="color: black; white-space:pre-line">GOODEVA CBD Division,
-                     Grand Galaxy
-                      Commercial RSK 6 No. 15,
-                      Kota Bekasi</p>
+                    Grand Galaxy
+                    Commercial RSK 6 No. 15,
+                    Kota Bekasi</p>
                 <p style="color: black"><strong>Email :</strong></p>
                 <p style="color: black">globalpristiya@gopi.com</p>
-
                 <p style="color: black"><strong>Follow Us</strong></p>
                 <a href=""><i class="fa fa-youtube-play mr-2" style="font-size:26px; color:rgb(0, 0, 0)"> </i></a>
                 <a href=""><i class="fa fa-twitter mx-2" style="font-size:26px; color:rgb(0, 0, 0)"> </i></a>
-                <a href="https://www.instagram.com/goodeva.id/?hl=id"><i class="fa fa-instagram mx-2" style="font-size:26px; color:rgb(0, 0, 0)"> </i></a>
-                <a href="https://www.facebook.com/globalpristya"><i class="fa fa-facebook-square mx-2" style="font-size:26px; color:rgb(0, 0, 0)"> </i></a>
+                <a href="https://www.instagram.com/goodeva.id/?hl=id"><i class="fa fa-instagram mx-2"
+                        style="font-size:26px; color:rgb(0, 0, 0)"> </i></a>
+                <a href="https://www.facebook.com/globalpristya"><i class="fa fa-facebook-square mx-2"
+                        style="font-size:26px; color:rgb(0, 0, 0)"> </i></a>
             </div>
         </div>
     </section>
