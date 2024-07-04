@@ -23,7 +23,7 @@ class EmailController extends Controller
             'message' => 'required',
         ]);
 
-        Mail::to('vndrdcan@gmail.com')->send(new SendEmail($data));
+        Mail::to('YOUR_EMAIL@domain.com')->send(new SendEmail($data));
 
         Data::create($data);
         
